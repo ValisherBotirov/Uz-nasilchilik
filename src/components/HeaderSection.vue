@@ -15,9 +15,9 @@
     </div>
     <div class="header-right">
       <div class="header-right_items">
-        <p>icons</p>
-        <p>icons</p>
-        <p>icons</p>
+        <a href="#" class="header-icon"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="header-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="header-icon"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </div>
   </header>
@@ -28,6 +28,13 @@ import { RouterLink } from "vue-router";
 </script>
 
 <style scoped>
+  .header-icon{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+  }
+
+  
 .header {
   width: 90%;
   margin: 0 auto;

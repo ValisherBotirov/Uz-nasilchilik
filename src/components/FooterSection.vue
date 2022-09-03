@@ -9,9 +9,9 @@
         /></a>
       </div>
       <div class="social-links right footer__row__side">
-        <div class="icon">icon</div>
-        <div class="icon">icon</div>
-        <div class="icon">icon</div>
+        <a href="#" class="footer-icon"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </div>
     <div class="middle footer__row">
@@ -43,6 +43,12 @@
 </template>
 
 <style scoped>
+  .footer-icon{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+
 .footer {
   display: flex;
   flex-direction: column;
