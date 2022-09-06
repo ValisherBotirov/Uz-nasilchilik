@@ -10,14 +10,16 @@
         <p class="catalogue__cell__right__description">{{item.description}}</p>
       </div>
     </div>
-   
+   <!-- <img src="../components/images/bgimg.jpg" alt=""> -->
   </div>
 </template>
 
 <script setup>
+  import img  from  "../components/images/bgimg.jpg"
+  
 const data = [
   {
-    id : 1 , title : "Sapphire ", index : "1",description : "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%",img : "https://api.elitaplem.ru/api/files/b423mJJsd4v54v/b4a6770b69ff2ff3b910da3d25753bfb_Saphir.jpg"
+    id : 1 , title : "Sapphire ", index : "1",description : "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%", img : img
   },
   {
     id : 2 , title : "Verkh  ", index : "2",description : "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",img:"https://api.elitaplem.ru/api/files/b423mJJsd4v54v/13415d005abb8d4dbc23181c8adc82d2_Verh.jpg"

@@ -9,9 +9,10 @@
         /></a>
       </div>
       <div class="social-links right footer__row__side">
-        <a href="#" class="footer-icon"><i class="fa-brands fa-telegram"></i></a>
-        <a href="#" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://t.me/uznasl" class="footer-icon"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/uznaslchilik_chorva/" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/uznaslchilik" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCXLkF2IQQrjotcsm5iSmj1g" class="footer-icon"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
     <div class="middle footer__row">

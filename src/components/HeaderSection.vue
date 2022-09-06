@@ -15,9 +15,10 @@
     </div>
     <div class="header-right">
       <div class="header-right_items">
-        <a href="#" class="header-icon"><i class="fa-brands fa-telegram"></i></a>
-        <a href="#" class="header-icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="header-icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://t.me/uznasl" class="header-icon"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/uznaslchilik_chorva/" class="header-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/uznaslchilik" class="header-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCXLkF2IQQrjotcsm5iSmj1g" class="header-icon"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </header>
