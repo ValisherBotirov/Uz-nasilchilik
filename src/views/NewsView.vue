@@ -3,7 +3,7 @@
     <h1 class="blog__title">News</h1>
     <div class="blog__cell" v-for="item,index in data" :key="index">
       <img :src="item.img" class="blog__cell__img-container"/>
-      <a href="#" class="blog__cell__info"><span class="blog__cell__info__date">{{item.date}}</span>
+      <a :href="item.url" class="blog__cell__info"><span class="blog__cell__info__date">{{item.date}}</span>
         <h3 class="blog__cell__info__title">{{item.title}}
         </h3>
         <p class="blog__cell__info__description">{{item.description}}</p>
@@ -16,7 +16,7 @@
 const data = [
   {
     id : 1, title : "XVI All-Russian competition of operators for artificial insemination of cattle",date:"8/17/2022", description:"Today, on August 17, 2022, the XVI All-Russian competition of operators for artificial insemination of cattle is being held in the city of Izhevsk, Udmurt Republic.",
-    img : "http://api.elitaplem.ru/api/files/b423mJJsd4v54v/a11b21d4e78eefcfc446e84e31b7fc0b_1.jpeg"
+    img : "http://api.elitaplem.ru/api/files/b423mJJsd4v54v/a11b21d4e78eefcfc446e84e31b7fc0b_1.jpeg",url : "https://telegra.ph/dfsfd-09-06"
   },
   {
     id : 2, title : "XVI All-Russian competition of operators for artificial insemination of cattle",date:"8/17/2022", description:"Today, on August 17, 2022, the XVI All-Russian competition of operators for artificial insemination of cattle is being held in the city of Izhevsk, Udmurt Republic.",
