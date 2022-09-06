@@ -15,15 +15,20 @@
 </template>
 
 <script setup>
+import img from "../components/images/angus1.png"
+import img1 from "../components/images/golshtin.png"
+import img2 from "../components/images/simmentall.png"
+
 const data = [
+
   {
-    id : 1 , title : "Sapphire ", index : "1",description : "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%",img : "https://api.elitaplem.ru/api/files/b423mJJsd4v54v/b4a6770b69ff2ff3b910da3d25753bfb_Saphir.jpg"
+    id : 1 , title : " ", index : "1",description : "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%",img : img,
   },
   {
-    id : 2 , title : "Verkh  ", index : "2",description : "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",img:"https://api.elitaplem.ru/api/files/b423mJJsd4v54v/13415d005abb8d4dbc23181c8adc82d2_Verh.jpg"
+    id : 2 , title : "Verkh  ", index : "2",description : "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",img:img1,
   },
   {
-    id : 3 , title : "Sandal  ", index : "3",description : "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",img:"https://api.elitaplem.ru/api/files/b423mJJsd4v54v/4411669ee26022dc722cf168b2911a4c_Sandal.jpg"
+    id : 3 , title : "Sandal  ", index : "3",description : "2010 - yilda tug'ilgan germaniyada, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",img:img2,
   },
   {
     id : 4 , title : "Sandal  ", index : "4",description : "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",img:"https://api.elitaplem.ru/api/files/b423mJJsd4v54v/8c6f762c756122d39d0a44b9122681bb_Mif.jpg"
