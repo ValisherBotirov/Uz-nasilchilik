@@ -3,12 +3,9 @@
     <div class="about-us usp__bgr"></div>
     <div class="about-us usp__toning"></div>
     <div class="about-us usp__wrapper">
-      <h1 class="about-us usp__wrapper__title">About company</h1>
+      <h1 class="about-us usp__wrapper__title">Kompaniya haqida</h1>
       <p class="about-us usp__wrapper__text">
-        The company has been successfully operating since 1977. The main
-        objective of the enterprise is to improve the productive qualities of
-        cattle by introducing artificial insemination methods using the semen of
-        the most high-valued bulls
+        1954-yili sgfhghgggggggggggggggggggsssssssssssssssssssshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
       </p>
     </div>
   </section>
