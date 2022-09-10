@@ -1,5 +1,5 @@
 <template>
-  <div class="responsive-header" :class="{'active':!toogleBtn}">
+  <div class="responsive-header" :class="{'active':toogleBtn}">
     <div class="header-links_res"  >
         <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Home</RouterLink>
         <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">About </RouterLink>
@@ -22,7 +22,7 @@
   <header class="header">
     <div class="header-left">
       <div class="header-logo__container">
-        <a href="#" @click="toogleBtn = !toogleBtn" class="menu" :class="{'active' : !toogleBtn}"><span class="menu-span"></span></a>
+        <a href="#" @click="toogleBtn = !toogleBtn" class="menu" :class="{'active' : toogleBtn}"><span class="menu-span"></span></a>
         <RouterLink to="/" class="header__side__logo-container">
           <img src="./icons/logo.png" class="header-logo" />
         </RouterLink>
