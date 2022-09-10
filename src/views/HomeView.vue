@@ -3,20 +3,64 @@
     <div class="home usp__bgr"></div>
     <div class="home usp__toning"></div>
     <div class="home usp__wrapper">
-      <h1 class="home usp__wrapper__title">
-        Parent breeding enterprise «Elite»
-      </h1>
+      <h1 class="home usp__wrapper__title">Parent breeding enterprise «Elite»</h1>
       <p class="home usp__wrapper__text">
-        Оne of the largest enterprises in Russia for the production and sale of
-        the seed of manufacturing bulls - it has been going on since 1977 when
-        the Kazan station of artificial insemination of farm animals had
-        transformed into the Republican organization on artificial insemination
-        of farm animals
+        Оne of the largest enterprises in Russia for the production and sale of the seed of manufacturing bulls - it has
+        been going on since 1977 when the Kazan station of artificial insemination of farm animals had transformed into
+        the Republican organization on artificial insemination of farm animals
       </p>
       <a class="call-order-form rounded-button">Get an offer</a>
     </div>
   </section>
   <!-- bannerdan keyingi section -->
+  <!-- catalog section start -->
+  <section class="catalog_section">
+    <h3 class="left-side laboratory-services chess__row__info-container__title">Catalog</h3>
+    <p class="catalog_section-paragraph">
+      We sell the seed of bulls of the Holstein breed of the best world selection. The productivity of bull mothers is
+      from 1,0000 to 24,000 kg of milk, fat content from 3.6% to 4.5%, protein content from 3.0 to 4.0%. Bulls are born
+      in the USA, Canada, Germany, the Netherlands. All bulls were tested for the carriage of gene anomalies,
+      haplotypes, for the ease of calving of daughters. Product prices are flexible. The laboratory for selection
+      control of milk quality examines samples for fat, protein, content of somatic cells, urea in milk, falsification
+      and quality of feeding cows
+    </p>
+    <div class="slider_container">
+      <swiper
+        :slidesPerView="4"
+        :spaceBetween="30"
+        :keyboard="{
+          enabled: true,
+        }"
+        :loopFillGroupWithBlank="true"
+        :speed="500"
+        :autoplay="{ delay: 2000, disableOnInteraction: false }"
+        :loop="true"
+        :lazy="true"
+        :pagination="{
+          clickable: true,
+        }"
+        :navigation="true"
+        :modules="modules"
+        class="card_slider"
+      >
+        <swiper-slide v-for="(slide, index) in slides" :key="index" class="swiper-slide">
+          <div class="img_box">
+            <img :src="slide" alt="bull_img" class="swiper-lazy" />
+            <div class="title">
+              <h3>Hello World</h3>
+              <p>Bull</p>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper>
+    </div>
+    <a
+      href="/en/services/laboratory-for-packing-and-freezing-of-seed?sid=FCWLX4fEtR"
+      class="rounded-button blue laboratory-services chess__row__info-container__more"
+      >All Catalogs</a
+    >
+  </section>
+  <!-- catalog section end -->
   <section class="dark laboratory-services chess">
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
@@ -24,10 +68,9 @@
           Laboratory for packing and freezing of seed
         </h3>
         <p class="laboratory-services chess__row__info-container__description">
-          Since 2006, the breeding enterprise has frozen the seed of bulls using
-          European technology, using special equipment of the 4th generation,
-          produced in France by the IMV company. In parallel with it, the seed
-          of the most highly valued bulls is packed
+          Since 2006, the breeding enterprise has frozen the seed of bulls using European technology, using special
+          equipment of the 4th generation, produced in France by the IMV company. In parallel with it, the seed of the
+          most highly valued bulls is packed
         </p>
         <a
           href="/en/services/laboratory-for-packing-and-freezing-of-seed?sid=FCWLX4fEtR"
@@ -45,18 +88,12 @@
     </div>
     <div class="left-side laboratory-services chess__row">
       <div class="left-side laboratory-services chess__row__info-container">
-        <h3
-          class="left-side laboratory-services chess__row__info-container__title"
-        >
-          The feed quality control laboratory offers services based on the
-          NutriOpt modular animal feeding system
+        <h3 class="left-side laboratory-services chess__row__info-container__title">
+          The feed quality control laboratory offers services based on the NutriOpt modular animal feeding system
         </h3>
-        <p
-          class="left-side laboratory-services chess__row__info-container__description"
-        >
-          The feed quality control laboratory offers services based on a modular
-          system NutriOpt Animal Feeding, which combines accurate analyzes
-          obtained on feed and forage analyzer "FOSS" NIRS DS 2500
+        <p class="left-side laboratory-services chess__row__info-container__description">
+          The feed quality control laboratory offers services based on a modular system NutriOpt Animal Feeding, which
+          combines accurate analyzes obtained on feed and forage analyzer "FOSS" NIRS DS 2500
         </p>
         <a
           href="/en/services/the-feed-quality-control-laboratory-offers-services-based-on-the-nutriopt-modular-animal-feeding-system?sid=RQzIte00ZJ"
@@ -78,10 +115,9 @@
           Laboratory of Milk Quality Selection Control
         </h3>
         <p class="laboratory-services chess__row__info-container__description">
-          The laboratory for breeding milk quality controls includes: the
-          CombiFoss ™ 7 system, which combines MilkoScan ™ 7 RM and Fossomatic ™
-          7, which allows you to simultaneously examine fat, protein, casein,
-          lactose, dry residue, urea
+          The laboratory for breeding milk quality controls includes: the CombiFoss ™ 7 system, which combines MilkoScan
+          ™ 7 RM and Fossomatic ™ 7, which allows you to simultaneously examine fat, protein, casein, lactose, dry
+          residue, urea
         </p>
         <a
           href="/en/services/laboratory-of-milk-quality-selection-control?sid=zYDi7RxGBF"
@@ -99,6 +135,89 @@
     </div>
   </section>
 </template>
+
+<script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/lazy";
+import "swiper/css/pagination";
+import { Autoplay, Keyboard, Navigation, Lazy } from "swiper";
+
+import slideImg1 from "../components/images/slider1.jpg";
+import slideImg2 from "../components/images/slider2.jpg";
+import slideImg3 from "../components/images/slider3.jpg";
+import slideImg4 from "../components/images/slider4.jpg";
+import slideImg5 from "../components/images/slider5.jpg";
+import slideImg6 from "../components/images/slider6.jpg";
+import slideImg7 from "../components/images/slider7.jpg";
+import slideImg8 from "../components/images/slider8.jpg";
+import slideImg9 from "../components/images/slider9.jpg";
+import slideImg10 from "../components/images/slider10.jpg";
+import slideImg11 from "../components/images/slider11.jpg";
+import slideImg12 from "../components/images/slider12.jpg";
+import slideImg13 from "../components/images/slider13.jpg";
+import slideImg14 from "../components/images/slider14.jpg";
+import slideImg15 from "../components/images/slider15.jpg";
+import slideImg16 from "../components/images/slider16.jpg";
+import slideImg17 from "../components/images/slider17.jpg";
+import slideImg18 from "../components/images/slider18.jpg";
+import slideImg19 from "../components/images/slider19.jpg";
+import slideImg20 from "../components/images/slider20.jpg";
+import slideImg21 from "../components/images/slider21.jpg";
+import slideImg22 from "../components/images/slider22.jpg";
+import slideImg23 from "../components/images/slider23.jpg";
+import slideImg24 from "../components/images/slider24.jpg";
+import slideImg25 from "../components/images/slider25.jpg";
+import slideImg26 from "../components/images/slider26.jpg";
+import slideImg27 from "../components/images/slider27.jpg";
+import slideImg28 from "../components/images/slider28.jpg";
+import slideImg29 from "../components/images/slider29.jpg";
+import slideImg30 from "../components/images/slider30.jpg";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  data() {
+    return {
+      modules: [Keyboard, Navigation, Autoplay, Lazy],
+      slides: [
+        slideImg1,
+        slideImg2,
+        slideImg3,
+        slideImg4,
+        slideImg5,
+        slideImg6,
+        slideImg7,
+        slideImg8,
+        slideImg9,
+        slideImg10,
+        slideImg11,
+        slideImg12,
+        slideImg13,
+        slideImg14,
+        slideImg15,
+        slideImg16,
+        slideImg17,
+        slideImg18,
+        slideImg19,
+        slideImg20,
+        slideImg21,
+        slideImg22,
+        slideImg23,
+        slideImg24,
+        slideImg25,
+        slideImg26,
+        slideImg27,
+        slideImg28,
+        slideImg29,
+        slideImg30,
+      ],
+    };
+  },
+};
+</script>
 
 <style scoped>
 .home.usp {
@@ -135,6 +254,9 @@
   align-items: flex-end;
   text-align: right;
 }
+.usp__wrapper__text {
+  margin-top: 3rem;
+}
 .usp__wrapper {
   display: inline-flex;
   flex-direction: column;
@@ -145,6 +267,12 @@
   z-index: 2;
   color: #fff;
   width: 600px;
+}
+.img_box {
+  width: 20vw;
+}
+.img_box img {
+  width: 100%;
 }
 .home.usp__scroll {
   right: 0;
@@ -186,6 +314,21 @@ a {
   font-family: "Museo Regular";
   transition: 0.3s color;
 }
+
+/* Catalog section start */
+.catalog_section {
+  padding-left: 150px;
+  margin: 6rem 0;
+}
+
+.slider_container {
+  margin: 2rem 0;
+}
+.catalog_section-paragraph {
+  margin-top: 2rem;
+}
+
+/* Catalog section end */
 /* banner =dan keyingi sectio */
 
 .chess {
@@ -217,7 +360,7 @@ a {
 }
 .chess__row__info-container__title {
   margin-bottom: 0;
-  color: #0055e9;
+  color: #1f69ea;
   font-size: 35px;
   text-align: right;
 }

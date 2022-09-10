@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header-left">
-      <div>
+      <div class="header-logo__container">
         <RouterLink to="/" class="header__side__logo-container">
           <img src="./icons/logo.png" class="header-logo" />
         </RouterLink>
@@ -16,9 +16,13 @@
     <div class="header-right">
       <div class="header-right_items">
         <a href="https://t.me/uznasl" class="header-icon"><i class="fa-brands fa-telegram"></i></a>
-        <a href="https://www.instagram.com/uznaslchilik_chorva/" class="header-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/uznaslchilik_chorva/" class="header-icon"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
         <a href="https://www.facebook.com/uznaslchilik" class="header-icon"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.youtube.com/channel/UCXLkF2IQQrjotcsm5iSmj1g" class="header-icon"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.youtube.com/channel/UCXLkF2IQQrjotcsm5iSmj1g" class="header-icon"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
       </div>
     </div>
   </header>
@@ -29,15 +33,17 @@ import { RouterLink } from "vue-router";
 </script>
 
 <style scoped>
-  .header-icon{
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-  }
+.header-icon {
+  text-decoration: none;
+  color: gray;
+  font-size: 24px;
+}
+.header-icon:hover {
+  color: #333;
+}
 
-  
 .header {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -49,7 +55,7 @@ import { RouterLink } from "vue-router";
   gap: 60px;
 }
 .header-logo {
-  width: 100px;
+  width: 60px;
 }
 
 .header-links {

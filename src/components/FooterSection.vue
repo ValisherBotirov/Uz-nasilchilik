@@ -3,29 +3,28 @@
     <div class="top footer__row">
       <div class="left footer__row__side">
         <a href="/en" class="footer__row__side__logo-container"
-          ><img
-            src="./icons/logo.png"
-            class="footer__row__side__logo-container__logo"
+          ><img src="./icons/logo.png" class="footer__row__side__logo-container__logo"
         /></a>
       </div>
       <div class="social-links right footer__row__side">
         <a href="https://t.me/uznasl" class="footer-icon"><i class="fa-brands fa-telegram"></i></a>
-        <a href="https://www.instagram.com/uznaslchilik_chorva/" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/uznaslchilik_chorva/" class="footer-icon"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
         <a href="https://www.facebook.com/uznaslchilik" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.youtube.com/channel/UCXLkF2IQQrjotcsm5iSmj1g" class="footer-icon"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.youtube.com/channel/UCXLkF2IQQrjotcsm5iSmj1g" class="footer-icon"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
       </div>
     </div>
     <div class="middle footer__row">
       <div class="left footer__row__side">
         <span class="footer__row__side__location"
-          >422701, Republic of Tatarstan, Vysokogorsky district, village of
-          Vysokaya Gora</span
+          ><b>422701, Republic of Tatarstan, Vysokogorsky district, village of Vysokaya Gora</b></span
         ><span class="footer__row__side__street">Iske-Kazanskaya str. 2a</span
-        ><a href="tel:+78436531530" class="footer__row__side__phone"
-          >+7 (843) 653-15-30 (Многоканальный)</a
+        ><a href="tel:+78436531530" class="footer__row__side__phone">+7 (843) 653-15-30 (Многоканальный)</a
         ><a href="tel:88005507754" class="footer__row__side__phone hot">
-          <span>Hot line</span
-          ><span>8 (800) 550-77-54 (toll-free in Russia)</span></a
+          <span>Hot line</span><span>8 (800) 550-77-54 (toll-free in Russia)</span></a
         ><a href="#" class="footer__row__side__email">info@elitaplem.ru</a>
       </div>
       <div class="right footer__row__side"></div>
@@ -35,20 +34,18 @@
         <span class="footer__row__side__copyright">2022 © Uznasilchilik</span>
       </div>
       <div class="right footer__row__side">
-        <a href="#" class="footer__row__side__copyright"
-          >The website is developed by Futureinapps</a
-        >
+        <a href="#" class="footer__row__side__copyright">The website is developed by Futureinapps</a>
       </div>
     </div>
   </footer>
 </template>
 
 <style scoped>
-  .footer-icon{
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-  }
+.footer-icon {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
 
 .footer {
   display: flex;
@@ -56,7 +53,6 @@
   align-items: center;
   justify-content: center;
   padding: 25px 45px;
-  width: calc(100% - 90px);
   background-color: #2432d4;
 }
 
@@ -78,6 +74,7 @@
 }
 .footer__row__side.left {
   align-items: flex-start;
+  gap: 0.3rem;
 }
 
 .footer__row__side {
@@ -96,7 +93,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 20px;
+}
+.footer__row__side.social-links a {
+  font-size: 24px;
+}
+.footer__row__side.social-links a:hover {
+  transform: scale(1.1);
 }
 .footer__row__side {
   display: flex;
