@@ -5,7 +5,7 @@
     <div class="about-us usp__wrapper">
       <h1 class="about-us usp__wrapper__title">Kompaniya haqida</h1>
       <p class="about-us usp__wrapper__text">
-        1954-yili sgfhghgggggggggggggggggggsssssssssssssssssssshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+        1954-yili 
       </p>
     </div>
   </section>
@@ -56,7 +56,7 @@
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .about-us.usp {
   margin-bottom: 40px;
 }

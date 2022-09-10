@@ -54,11 +54,10 @@
         </swiper-slide>
       </swiper>
     </div>
-    <a
-      href="/en/services/laboratory-for-packing-and-freezing-of-seed?sid=FCWLX4fEtR"
+    <router-link
       class="rounded-button blue laboratory-services chess__row__info-container__more"
-      >All Catalogs</a
-    >
+      :to="{name:'catolog'}"
+      >All Catalogs</router-link>
   </section>
   <!-- catalog section end -->
   <section class="dark laboratory-services chess">
