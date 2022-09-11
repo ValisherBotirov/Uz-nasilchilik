@@ -28,7 +28,15 @@
   </header>
 </template>
 
-<script setup></script>
+<script>
+import { RouterLink } from "vue-router";
+export default {
+  name: "header",
+  components: {
+    RouterLink,
+  },
+};
+</script>
 
 <style scoped>
 .header-icon {
@@ -39,7 +47,6 @@
 .header-icon:hover {
   color: #333;
 }
-
 .header {
   width: 95%;
   margin: 0 auto;
@@ -55,7 +62,6 @@
 .header-logo {
   width: 60px;
 }
-
 .header-links {
   display: flex;
   gap: 30px;
@@ -65,7 +71,6 @@
   color: #a4a4a4;
   font-size: 20px;
 }
-
 .header-link:hover {
   color: black;
 }

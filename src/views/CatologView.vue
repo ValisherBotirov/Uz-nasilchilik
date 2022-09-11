@@ -11,9 +11,9 @@
       </div>
     </div>
     <div class="slide_control">
-      <button class="prevSlide" :disabled="this.currentPage === 0" @click="prevSlide">&larr;</button>
+      <p class="prevSlide" :disabled="this.currentPage === 0" @click="prevSlide">&larr;</p>
       <span> {{ maxPageFunc }} </span>
-      <button class="nextSlide" :disabled="this.currentPage === this.maxPage - 1" @click="nextSlide">&rarr;</button>
+      <p class="nextSlide" :disabled="this.currentPage === this.maxPage - 1" @click="nextSlide">&rarr;</p>
     </div>
   </div>
 </template>
@@ -267,7 +267,7 @@ export default {
       }
     },
     prevSlide() {
-      if (this.currentPage >= 0) {
+      if (this.currentPage > 0) {
         this.currentPage--;
 
         this.displaySlide = this.dataSlide.slice(
@@ -363,6 +363,8 @@ img {
 .prevSlide,
 .nextSlide {
   transition: all 0.3s;
+  cursor: pointer;
+  font-size: 20px;
 }
 .prevSlide:hover,
 .nextSlide:hover {
