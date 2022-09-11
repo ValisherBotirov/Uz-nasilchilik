@@ -1,121 +1,377 @@
 <template>
   <div class="catalogue">
-    <h1 class="catalogue__title">Catalogue</h1>
-    <div class="catalogue__cell" v-for="item,index in data" :key="index">
+    <h1 class="catalogue__title">Catalog</h1>
+    <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
       <div class="catalogue__cell__left">
-        <img :src="item.img" class="catalogue__cell__left__img">
+        <img :src="item.img" class="catalogue__cell__left__img" />
       </div>
       <div class="catalogue__cell__right">
-        <h3 class="catalogue__cell__right__title">{{item.title}} №{{item.index}}</h3>
-        <p class="catalogue__cell__right__description">{{item.description}}</p>
+        <h3 class="catalogue__cell__right__title">{{ item.title }} №{{ pageLimit * currentPage + index + 1 }}</h3>
+        <p class="catalogue__cell__right__description">{{ item.description }}</p>
       </div>
     </div>
-   <!-- <img src="../components/images/bgimg.jpg" alt=""> -->
+    <div class="slide_control">
+      <button class="prevSlide" :disabled="this.currentPage === 0" @click="prevSlide">&larr;</button>
+      <span> {{ maxPageFunc }} </span>
+      <button class="nextSlide" :disabled="this.currentPage === this.maxPage - 1" @click="nextSlide">&rarr;</button>
+    </div>
   </div>
 </template>
 
-<script setup>
-import img from "../components/images/angus1.png"
-import img1 from "../components/images/golshtin.png"
-import img2 from "../components/images/simmentall.png"
+<script>
+import slideImages1 from "../components/images/slider1.jpg";
+import slideImages2 from "../components/images/slider2.jpg";
+import slideImages3 from "../components/images/slider3.jpg";
+import slideImages4 from "../components/images/slider4.jpg";
+import slideImages5 from "../components/images/slider5.jpg";
+import slideImages6 from "../components/images/slider6.jpg";
+import slideImages7 from "../components/images/slider7.jpg";
+import slideImages8 from "../components/images/slider8.jpg";
+import slideImages9 from "../components/images/slider9.jpg";
+import slideImages10 from "../components/images/slider10.jpg";
+import slideImages11 from "../components/images/slider11.jpg";
+import slideImages12 from "../components/images/slider12.jpg";
+import slideImages13 from "../components/images/slider13.jpg";
+import slideImages14 from "../components/images/slider14.jpg";
+import slideImages15 from "../components/images/slider15.jpg";
+import slideImages16 from "../components/images/slider16.jpg";
+import slideImages17 from "../components/images/slider17.jpg";
+import slideImages18 from "../components/images/slider18.jpg";
+import slideImages19 from "../components/images/slider19.jpg";
+import slideImages20 from "../components/images/slider20.jpg";
+import slideImages21 from "../components/images/slider21.jpg";
+import slideImages22 from "../components/images/slider22.jpg";
+import slideImages23 from "../components/images/slider23.jpg";
+import slideImages24 from "../components/images/slider24.jpg";
+import slideImages25 from "../components/images/slider25.jpg";
+import slideImages26 from "../components/images/slider26.jpg";
+import slideImages27 from "../components/images/slider27.jpg";
+import slideImages28 from "../components/images/slider28.jpg";
+import slideImages29 from "../components/images/slider29.jpg";
+import slideImages30 from "../components/images/slider30.jpg";
 
-const data = [
+export default {
+  name: "catolog-view",
+  data() {
+    return {
+      currentPage: 0,
+      pageLimit: 8,
+      dataSlide: [
+        {
+          id: 1,
+          title: "Sapphire ",
+          description:
+            "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%",
+          img: slideImages1,
+        },
+        {
+          title: "Verkh  ",
+          description:
+            "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",
+          img: slideImages2,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "2010 - yilda tug'ilgan germaniyada, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages3,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages4,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages5,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages6,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages7,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages8,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages9,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages10,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages11,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages12,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages13,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages14,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages15,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages16,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages17,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages18,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages19,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages20,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages21,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages22,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages23,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages24,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages25,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages26,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages27,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages28,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages29,
+        },
+        {
+          title: "Sandal  ",
+          description:
+            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+          img: slideImages30,
+        },
+      ],
+      displaySlide: null,
+      maxPage: null,
+    };
+  },
+  computed: {
+    maxPageFunc() {
+      return `page ${this.currentPage + 1} in ${this.maxPage}`;
+    },
+  },
+  mounted() {
+    this.displaySlide = this.dataSlide.slice(
+      this.currentPage * this.pageLimit,
+      this.pageLimit * (this.currentPage + 1)
+    );
+    this.maxPage = Math.ceil(this.dataSlide.length / this.pageLimit);
+  },
+  methods: {
+    nextSlide() {
+      if (this.currentPage < this.maxPage - 1) {
+        this.currentPage++;
 
-  {
-    id : 1 , title : "Sapphire ", index : "1",description : "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%", img : img
-  },
-  {
-    id : 2 , title : "Verkh  ", index : "2",description : "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",img:img1,
-  },
-  {
-    id : 3 , title : "Sandal  ", index : "3",description : "2010 - yilda tug'ilgan germaniyada, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",img:img2,
-  },
-  {
-    id : 4 , title : "Sandal  ", index : "4",description : "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",img:"https://api.elitaplem.ru/api/files/b423mJJsd4v54v/8c6f762c756122d39d0a44b9122681bb_Mif.jpg"
-  },
-  {
-    id : 5 , title : "Sandal  ", index : "5",description : "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",img:"https://api.elitaplem.ru/api/files/b423mJJsd4v54v/222d69465a0640a730f13162b35d3896_muskat.jpg"
-  },
-  {
-    id : 6 , title : "Sandal  ", index : "6",description : "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",img:"https://api.elitaplem.ru/api/files/b423mJJsd4v54v/eead6b65c6019744d8a9b9bb2d85a958_ugolok.jpg"
-  },
+        this.displaySlide = this.dataSlide.slice(
+          this.currentPage * this.pageLimit,
+          this.pageLimit * (this.currentPage + 1)
+        );
+      }
+    },
+    prevSlide() {
+      if (this.currentPage >= 0) {
+        this.currentPage--;
 
-]
+        this.displaySlide = this.dataSlide.slice(
+          this.currentPage * this.pageLimit,
+          this.pageLimit * (this.currentPage + 1)
+        );
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
-  
-
 .catalogue__title {
-    color: #0055e9;
-    font-size: 35px;
-    width: 100%;
+  color: #0055e9;
+  font-size: 35px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.swiper_img_box img {
+  width: 100%;
 }
 .catalogue {
-    padding: 15px 45px;
-    padding-bottom: 130px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: calc(100% - 90px);
-    justify-content: flex-start;
+  padding: 15px 45px;
+  padding-bottom: 130px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: calc(100% - 90px);
+  justify-content: flex-start;
 }
 .catalogue__cell {
-    max-height: 180px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    align-items: flex-start;
-    width: 50%;
+  max-height: 180px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  align-items: flex-start;
+  width: 50%;
+}
+.slide_control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 .catalogue__cell__left {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 320px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
 }
 .catalogue__cell__left__img {
-    width: 320px;
-    height: 180px;
+  width: 320px;
+  height: 180px;
 }
 img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .catalogue__cell__right {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 320px);
-    align-items: flex-start;
-    margin-left: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 320px);
+  align-items: flex-start;
+  margin-left: 20px;
 }
 .catalogue__cell__right__title {
-    transition: all .3s;
-    margin: 0;
-    text-align: left;
-    width: 90%;
-    word-break: break-word;
-    margin-bottom: 5px;
-    color: #0055e9;
-    font-family: 'Times New Roman', Times, serif;
+  transition: all 0.3s;
+  margin: 0;
+  text-align: left;
+  width: 90%;
+  word-break: break-word;
+  margin-bottom: 5px;
+  color: #0055e9;
+  font-family: "Times New Roman", Times, serif;
 }
 .catalogue__cell__right__description {
-    word-break: break-word;
-    width: 90%;
-    margin: 0;
-    text-align: left;
-    color: #000;
+  word-break: break-word;
+  width: 90%;
+  margin: 0;
+  text-align: left;
+  color: #000;
+}
+.prevSlide,
+.nextSlide {
+  transition: all 0.3s;
+}
+.prevSlide:hover,
+.nextSlide:hover {
+  transform: translateY(-2px);
 }
 
-p, span {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 25px;
+p,
+span {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 25px;
 }
 </style>

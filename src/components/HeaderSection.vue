@@ -28,9 +28,7 @@
   </header>
 </template>
 
-<script setup>
-import { RouterLink } from "vue-router";
-</script>
+<script setup></script>
 
 <style scoped>
 .header-icon {

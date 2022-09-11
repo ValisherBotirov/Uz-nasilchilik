@@ -12,6 +12,7 @@
       <a class="call-order-form rounded-button">Get an offer</a>
     </div>
   </section>
+
   <!-- bannerdan keyingi section -->
   <!-- catalog section start -->
   <section class="catalog_section">
@@ -33,11 +34,26 @@
         }"
         :loopFillGroupWithBlank="true"
         :speed="500"
-        :autoplay="{ delay: 2000, disableOnInteraction: false }"
+        :autoplay="{ delay: 3000, disableOnInteraction: false }"
         :loop="true"
         :lazy="true"
         :pagination="{
           clickable: true,
+        }"
+        :breakpoints="{
+          '410': {
+            slidesPerView: 1,
+          },
+          '640': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 3,
+          },
+          '1024': {
+            slidesPerView: 4,
+          },
         }"
         :navigation="true"
         :modules="modules"
@@ -45,10 +61,10 @@
       >
         <swiper-slide v-for="(slide, index) in slides" :key="index" class="swiper-slide">
           <div class="img_box">
-            <img :src="slide" alt="bull_img" class="swiper-lazy" />
-            <div class="title">
-              <h3>Hello World</h3>
-              <p>Bull</p>
+            <img :src="slide.img" alt="bull_img" class="swiper-lazy" />
+            <div class="slide_title">
+              <h3>{{ slide.name }}</h3>
+              <a :href="slide.link">All Abouts</a>
             </div>
           </div>
         </swiper-slide>
@@ -183,36 +199,37 @@ export default {
     return {
       modules: [Keyboard, Navigation, Autoplay, Lazy],
       slides: [
-        slideImg1,
-        slideImg2,
-        slideImg3,
-        slideImg4,
-        slideImg5,
-        slideImg6,
-        slideImg7,
-        slideImg8,
-        slideImg9,
-        slideImg10,
-        slideImg11,
-        slideImg12,
-        slideImg13,
-        slideImg14,
-        slideImg15,
-        slideImg16,
-        slideImg17,
-        slideImg18,
-        slideImg19,
-        slideImg20,
-        slideImg21,
-        slideImg22,
-        slideImg23,
-        slideImg24,
-        slideImg25,
-        slideImg26,
-        slideImg27,
-        slideImg28,
-        slideImg29,
-        slideImg30,
+        { img: slideImg1, name: "Hello world", link: "#" },
+        { img: slideImg2, name: "Hello world", link: "#" },
+        { img: slideImg3, name: "Hello world", link: "#" },
+        { img: slideImg4, name: "Hello world", link: "#" },
+        { img: slideImg5, name: "Hello world", link: "#" },
+        { img: slideImg6, name: "Hello world", link: "#" },
+        { img: slideImg7, name: "Hello world", link: "#" },
+        { img: slideImg8, name: "Hello world", link: "#" },
+        { img: slideImg9, name: "Hello world", link: "#" },
+        { img: slideImg10, name: "Hello world", link: "#" },
+        { img: slideImg11, name: "Hello world", link: "#" },
+        { img: slideImg12, name: "Hello world", link: "#" },
+        { img: slideImg13, name: "Hello world", link: "#" },
+        { img: slideImg14, name: "Hello world", link: "#" },
+        { img: slideImg15, name: "Hello world", link: "#" },
+        { img: slideImg16, name: "Hello world", link: "#" },
+        { img: slideImg17, name: "Hello world", link: "#" },
+        { img: slideImg18, name: "Hello world", link: "#" },
+        { img: slideImg19, name: "Hello world", link: "#" },
+        { img: slideImg20, name: "Hello world", link: "#" },
+        { img: slideImg21, name: "Hello world", link: "#" },
+        { img: slideImg22, name: "Hello world", link: "#" },
+        { img: slideImg23, name: "Hello world", link: "#" },
+        { img: slideImg24, name: "Hello world", link: "#" },
+        { img: slideImg25, name: "Hello world", link: "#" },
+        { img: slideImg26, name: "Hello world", link: "#" },
+        { img: slideImg26, name: "Hello world", link: "#" },
+        { img: slideImg27, name: "Hello world", link: "#" },
+        { img: slideImg28, name: "Hello world", link: "#" },
+        { img: slideImg29, name: "Hello world", link: "#" },
+        { img: slideImg30, name: "Hello world", link: "#" },
       ],
     };
   },
@@ -267,9 +284,6 @@ export default {
   z-index: 2;
   color: #fff;
   width: 600px;
-}
-.img_box {
-  width: 20vw;
 }
 .img_box img {
   width: 100%;
@@ -327,6 +341,14 @@ a {
 .catalog_section-paragraph {
   margin-top: 2rem;
 }
+.slide_title {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.slide_title a {
+  color: #0055e9;
+}
 
 /* Catalog section end */
 /* banner =dan keyingi sectio */
@@ -370,8 +392,7 @@ a {
 }
 p,
 span {
-  font-family: "sans-serif";
-  line-height: 20px;
+  line-height: 1.6;
 }
 
 .chess__row__img-container {
