@@ -1,5 +1,6 @@
 <template>
     <div class="responsive-header" :class="{'active':toogleBtn}">
+      
     <div class="header-links_res"  >
         <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Home</RouterLink>
         <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">About </RouterLink>

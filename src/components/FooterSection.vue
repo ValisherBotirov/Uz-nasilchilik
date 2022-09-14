@@ -20,21 +20,22 @@
     <div class="middle footer__row">
       <div class="left footer__row__side">
         <span class="footer__row__side__location"
-          ><b>422701, Republic of Tatarstan, Vysokogorsky district, village of Vysokaya Gora</b></span
-        ><span class="footer__row__side__street">Iske-Kazanskaya str. 2a</span
-        ><a href="tel:+78436531530" class="footer__row__side__phone">+7 (843) 653-15-30 (Многоканальный)</a
-        ><a href="tel:88005507754" class="footer__row__side__phone hot">
-          <span>Hot line</span><span>8 (800) 550-77-54 (toll-free in Russia)</span></a
-        ><a href="#" class="footer__row__side__email">info@elitaplem.ru</a>
+          ><b>O'znaslchilik davlat korxonasi</b></span
+        ><span class="footer__row__side__street">O'zbekiston bo'ylab yuqori genotipli chuqur muzlatilgan naslli buqalar urug'larni yetqazib beradi  • </span
+        ><p class="footer__row__side__phone"><b>Manzilimiz : </b> Toshkent shahar Mirzo Ulug'bek tumani 37-A uy</p>
+        <p class="footer__row__side__phone hot">
+          <b>Telefon : </b>&nbsp; +998 (90) 915 25 26
+        </p>
+        <a href="#" class="footer__row__side__email">uznasilchilik.uz</a>
       </div>
       <div class="right footer__row__side"></div>
     </div>
-    <div class="bottom footer__row">
-      <div class="left footer__row__side">
-        <span class="footer__row__side__copyright">2022 © Uznasilchilik</span>
-      </div>
-      <div class="right footer__row__side">
-        <a href="#" class="footer__row__side__copyright">The website is developed by Futureinapps</a>
+    <div class="footer-bottom">
+      <p class="footer-bottom_left">
+        2022 © Uznasilchilik
+      </p>
+      <div class="footer-bottom_right">
+        <a href="#" class="footer__row__side__copyright">Developed by Valisher Botirov and Bekzod Baratov</a>
       </div>
     </div>
   </footer>
@@ -112,6 +113,13 @@
   margin-left: 15px;
   transition: 0.3s all;
 }
+.footer-bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ color: #fff;
+
+}
 
 .footer__row.middle a,
 .footer__row.middle span {
@@ -124,10 +132,8 @@
 .footer__row__side__email.hot,
 .footer__row__side__phone.hot {
   display: inline-flex;
-  /* flex-direction: column; */
   align-items: flex-start;
-  /* justify-content: center; */
-  /* text-align: center; */
+  
 }
 
 .footer__row__side__email,
@@ -154,5 +160,16 @@ a {
 }
 .footer__row__side__copyright {
   color: #fff;
+  font-family: "regular";
+}
+/* responive */
+@media (max-width: 768px){
+  .footer-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: start;
+  }
+  
 }
 </style>
