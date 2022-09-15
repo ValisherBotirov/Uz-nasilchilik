@@ -41,11 +41,8 @@
           clickable: true,
         }"
         :breakpoints="{
-          '340':{
-            sliderPerView : 1
-          },
-          '410': {
-            slidesPerView: 1,
+          '300':{
+            slidesPerView : 1
           },
           '640': {
             slidesPerView: 2,
