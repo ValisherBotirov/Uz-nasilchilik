@@ -15,7 +15,7 @@
 
   <!-- bannerdan keyingi section -->
   <!-- catalog section start -->
-  <section class="catalog_section">
+  <section class="catalog_section ">
     <h3 class="left-side laboratory-services chess__row__info-container__title">Catalog</h3>
     <p class="catalog_section-paragraph">
       We sell the seed of bulls of the Holstein breed of the best world selection. The productivity of bull mothers is
@@ -25,7 +25,7 @@
       control of milk quality examines samples for fat, protein, content of somatic cells, urea in milk, falsification
       and quality of feeding cows
     </p>
-    <div class="slider_container">
+    <div class="slider_container ">
       <swiper
         :slidesPerView="4"
         :spaceBetween="30"
@@ -64,7 +64,7 @@
             <img :src="slide.img" alt="bull_img" class="swiper-lazy" />
             <div class="slide_title">
               <h3>{{ slide.name }}</h3>
-              <a :href="slide.link">All Abouts</a>
+              <router-link :to="slide.link">All Abouts</router-link>
             </div>
           </div>
         </swiper-slide>
@@ -76,7 +76,7 @@
       >All Catalogs</router-link>
   </section>
   <!-- catalog section end -->
-  <section class="dark laboratory-services chess">
+  <section class="dark laboratory-services chess container">
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
         <h3 class="laboratory-services chess__row__info-container__title">
@@ -88,7 +88,7 @@
           most highly valued bulls is packed
         </p>
         <a
-          href="/en/services/laboratory-for-packing-and-freezing-of-seed?sid=FCWLX4fEtR"
+          href="#"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</a
         >
@@ -242,6 +242,11 @@ export default {
   align-items: flex-end;
 }
 
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
 .usp {
   height: 100vh;
   position: relative;
@@ -330,8 +335,8 @@ a {
 
 /* Catalog section start */
 .catalog_section {
-  padding-left: 150px;
-  margin: 6rem 0;
+  width: 90%;
+  margin: 5rem auto;
 }
 
 .slider_container {
@@ -406,6 +411,7 @@ span {
 
 .chess__row__img-container__img {
   width: 100%;
+  object-fit: cover;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -446,6 +452,38 @@ a {
 img {
   border-radius: 10px;
 }
+
+@media(max-width: 1050px){
+  .chess__row,.left-side.chess__row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .chess__row__info-container{
+    width: 100%;
+    text-align: left !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 !important;
+  }
+  .chess__row__img-container{
+    width: 100%;
+  }
+  .chess__row__info-container__title{
+    text-align: left;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .chess__row__info-container__description{
+    text-align: left;
+    margin: 10px 0;
+  }
+  .chess__row__img-container__img{
+    max-height: 480px;
+    object-fit: cover;
+  }
+}
+
+
 </style>
 
 <script setup>
