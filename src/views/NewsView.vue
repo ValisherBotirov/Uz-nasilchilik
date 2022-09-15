@@ -1,13 +1,23 @@
 <template>
   <div class="blog">
     <h1 class="blog__title">News</h1>
-    <div class="blog__cell" v-for="item,index in data" :key="index">
+    <!-- <div class="blog__cell" v-for="item,index in data" :key="index">
       <img :src="item.img" class="blog__cell__img-container"/>
       <a :href="item.url" class="blog__cell__info"><span class="blog__cell__info__date">{{item.date}}</span>
         <h3 class="blog__cell__info__title">{{item.title}}
         </h3>
         <p class="blog__cell__info__description">{{item.description}}</p>
       </a>
+    </div> -->
+    <div class="blog-cell">
+      <div class="blog-card" v-for="item,index in data" :key="index">
+        <img :src="item.img" class="blog-img"/>
+        <a :href="item.url" class="blog__cell__info"><span class="blog__cell__info__date">{{item.date}}</span>
+        <h3 class="blog__cell__info__title">{{item.title}}
+        </h3>
+        <p class="blog__cell__info__description">{{item.description}}</p>
+      </a>
+      </div>
     </div>
   </div>
 </template>
@@ -49,38 +59,31 @@ const data = [
   a{
     text-decoration: none;
   }
-.blog {
-    padding: 15px 45px;
-    padding-bottom: 130px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: calc(100% - 90px);
-    justify-content: flex-start;
-    row-gap: 20px;
-}
-.blog__title {
+  .blog{
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 50px;
+
+  }
+  .blog__title{
     color: #0055e9;
     font-size: 35px;
-    width: 100%;
-}
-.blog__cell {
-    width: calc(25% - 40px);
-    margin-right: 40px;
-}
-.blog__cell__img-container {
+  }
+  .blog-cell{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 35px;
+    margin: 20px 0;
+  }
+  .blog-img{
     width: 100%;
     border-radius: 10px;
     height: 350px;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.blog__cell__info {
-    width: 270px;
+  }
+  .blog__cell__info {
     transition: .3s all;
     margin-top: 25px;
     width: 100%;
@@ -88,6 +91,7 @@ const data = [
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .blog__cell__info__date {
     font-family: Museo Regular;
@@ -104,6 +108,11 @@ const data = [
     margin: 5px 0;
     text-align: left;
     color: #0055e9;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .blog__cell__info__description {
     width: 100%;
@@ -120,4 +129,19 @@ const data = [
     font-size: 18px;
     line-height: 20px;
 }
+ @media(max-width:1200px){
+  .blog-cell{
+    grid-template-columns: repeat(3,1fr);
+  }
+ }
+ @media(max-width:867px){
+  .blog-cell{
+    grid-template-columns: repeat(2,1fr);
+  }
+ }
+ @media(max-width:620px){
+  .blog-cell{
+    grid-template-columns: repeat(1,1fr);
+  }
+ }
 </style>
