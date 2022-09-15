@@ -1,16 +1,19 @@
 <template>
   <div class="catalogue">
     <h1 class="catalogue__title">Catalog</h1>
-    <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
-      <div class="catalogue__cell__left">
-        <img :src="item.img" class="catalogue__cell__left__img" />
+    <div class="catologue-card">
+      <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
+        <div class="catalogue__cell__left">
+          <img :src="item.img" class="catalogue__cell__left__img" />
+        </div>
+        <div class="catalogue__cell__right">
+          <h3 class="catalogue__cell__right__title">{{ item.title }} №{{ pageLimit * currentPage + index + 1 }}</h3>
+          <p class="catalogue__cell__right__description">{{ item.description }}</p>
+        </div>
       </div>
-      <div class="catalogue__cell__right">
-        <h3 class="catalogue__cell__right__title">{{ item.title }} №{{ pageLimit * currentPage + index + 1 }}</h3>
-        <p class="catalogue__cell__right__description">{{ item.description }}</p>
-      </div>
-    </div>
-    <div class="slide_control">
+   
+  </div>
+  <div class="slide_control">
       <p class="prevSlide" :disabled="this.currentPage === 0" @click="prevSlide">&larr;</p>
       <span> {{ maxPageFunc }} </span>
       <p class="nextSlide" :disabled="this.currentPage === this.maxPage - 1" @click="nextSlide">&rarr;</p>
@@ -281,36 +284,35 @@ export default {
 </script>
 
 <style scoped>
-.catalogue__title {
+.catalogue{
+  width: 90%;
+  margin : 0 auto;
+}
+.catalogue__title{
   color: #0055e9;
   font-size: 35px;
-  width: 100%;
-  margin-bottom: 2rem;
+  margin: 20px 0;
 }
-.swiper_img_box img {
-  width: 100%;
+.catologue-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
-.catalogue {
-  padding: 15px 45px;
-  padding-bottom: 130px;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
+.catalogue__cell{
+  display: flex;
+  gap: 15px;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  width: calc(100% - 90px);
-  justify-content: flex-start;
-}
-.catalogue__cell {
-  max-height: 180px;
-  display: inline-flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
   margin-bottom: 25px;
-  align-items: flex-start;
-  width: 50%;
+}
+.catalogue__cell__left{
+  max-height: 180px;
+}
+.catalogue__cell__left__img{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+object-fit: cover;
 }
 .slide_control {
   display: flex;
@@ -318,47 +320,8 @@ export default {
   justify-content: center;
   width: 100%;
   gap: 1rem;
-  margin-top: 2rem;
-}
-.catalogue__cell__left {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 320px;
-}
-.catalogue__cell__left__img {
-  width: 320px;
-  height: 180px;
-}
-img {
-  border-radius: 10px;
-}
-.catalogue__cell__right {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% - 320px);
-  align-items: flex-start;
-  margin-left: 20px;
-}
-.catalogue__cell__right__title {
-  transition: all 0.3s;
-  margin: 0;
-  text-align: left;
-  width: 90%;
-  word-break: break-word;
-  margin-bottom: 5px;
-  color: #0055e9;
-  font-family: "Times New Roman", Times, serif;
-}
-.catalogue__cell__right__description {
-  word-break: break-word;
-  width: 90%;
-  margin: 0;
-  text-align: left;
-  color: #000;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .prevSlide,
 .nextSlide {
@@ -371,9 +334,50 @@ img {
   transform: translateY(-2px);
 }
 
+.catalogue__cell__right__title {
+  transition: all 0.3s;
+  word-break: break-word;
+  margin-bottom: 5px;
+  color: #0055e9;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
 p,
 span {
   font-family: "Times New Roman", Times, serif;
   line-height: 25px;
+} 
+.catalogue__cell__right__description {
+  word-break: break-word;
+  color: #000; 
 }
+
+@media (max-width:1110px){
+  .catalogue__cell{
+    flex-direction: column;
+  }
+  .catalogue__cell__left{
+    width: 100%;
+    max-height: 280px;
+  }
+  .catalogue__cell__right__description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+@media (max-width:680px){
+  .catologue-card{
+    grid-template-columns: 1fr;
+  }
+  .catalogue__cell__left{
+    max-height: 320px;
+  }
+  .slide_control{
+    margin-top: 20px;
+  }
+}
+
 </style>
