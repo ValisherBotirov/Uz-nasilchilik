@@ -41,6 +41,9 @@
           clickable: true,
         }"
         :breakpoints="{
+          '340':{
+            sliderPerView : 1
+          },
           '410': {
             slidesPerView: 1,
           },
