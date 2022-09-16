@@ -111,7 +111,7 @@
           combines accurate analyzes obtained on feed and forage analyzer "FOSS" NIRS DS 2500
         </p>
         <a
-          href="/en/services/the-feed-quality-control-laboratory-offers-services-based-on-the-nutriopt-modular-animal-feeding-system?sid=RQzIte00ZJ"
+          href="#"
           class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
           >More</a
         >
@@ -135,7 +135,7 @@
           residue, urea
         </p>
         <a
-          href="/en/services/laboratory-of-milk-quality-selection-control?sid=zYDi7RxGBF"
+          href="#"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</a
         >
@@ -284,10 +284,10 @@ export default {
   align-items: center;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 45px;
+  padding: 0 40px;
   z-index: 2;
   color: #fff;
-  width: 600px;
+  max-width: 600px;
 }
 .img_box img {
   width: 100%;
@@ -326,6 +326,11 @@ span {
   height: 50px;
   border-radius: 30px;
   transition: 0.3s all;
+}
+.rounded-button:hover{
+  background-color: rgb(255, 250, 250);
+  color: black;
+  border: 2px solid black;
 }
 a {
   text-decoration: none;
@@ -442,7 +447,11 @@ span {
   background-color: #0055e9;
   color: #fff;
 }
-
+.rounded-button.blue:hover{
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+}
 a {
   text-decoration: none;
   font-family: Museo Regular;

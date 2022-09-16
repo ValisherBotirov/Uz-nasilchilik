@@ -152,13 +152,13 @@
 
 .responsive-header{
   /* display: none; */
-  transform: translate(-100% ,-100%);
+  transform: translate(100% ,0%);
   width: 100vw;
   height: 100vh;
   position : absolute;
   background-color: rgb(190, 189, 189);
   text-align: center;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .responsive-header.active{
   transform: translate(0 ,0); 
