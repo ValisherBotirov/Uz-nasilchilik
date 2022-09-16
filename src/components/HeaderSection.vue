@@ -151,7 +151,7 @@
 }
 
 .responsive-header{
-  /* display: none; */
+opacity: 0;
   transform: translate(100% ,0%);
   width: 100vw;
   height: 100vh;
@@ -161,6 +161,8 @@
   transition: all 0.5s;
 }
 .responsive-header.active{
+  opacity: 1;
+  display: block;
   transform: translate(0 ,0); 
 }
 .header-links_res{
