@@ -101,6 +101,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -114,6 +115,7 @@
 .footer__row__side__copyright {
   color: #fff;
   font-family: "Museo Bold";
+  transition: all 0.7s;
 }
 
 .footer-middle_box{
@@ -124,9 +126,16 @@
   color: #fff;
 }
 .footer-title{
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
+.footer-phone:hover,.footer-email:hover,.footer-location:hover{
+  color: rgb(136, 130, 130);
+}
+.footer__row__side__copyright:hover{
+  color: rgb(136, 130, 130);
+  transform: scale(1.2)
+}
 /* responive */
 @media (max-width: 768px){
   .footer-bottom{
