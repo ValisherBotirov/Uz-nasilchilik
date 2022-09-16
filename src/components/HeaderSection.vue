@@ -152,7 +152,7 @@
 
 .responsive-header{
 opacity: 0;
-  transform: translate(100% ,0%);
+  transform: translate(-100% ,-100%);
   width: 100vw;
   height: 100vh;
   position : absolute;
