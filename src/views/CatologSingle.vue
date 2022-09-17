@@ -53,7 +53,7 @@ console.log(route.params)
 }
 img{
   width: 100%;
-  max-height: 500px;
+  max-height: 450px;
   object-fit: cover;
   border-radius: 10px;
   margin-top: 20px;
