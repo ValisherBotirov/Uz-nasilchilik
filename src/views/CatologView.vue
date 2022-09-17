@@ -3,13 +3,15 @@
     <h1 class="catalogue__title">Catalog</h1>
     <div class="catologue-card">
       <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
-        <div class="catalogue__cell__left">
+        <!-- <div class="catalogue__cell__left"> -->
+          <router-link :to="{path : `catolog/${index+1}`, query: { title: item.title,description:item.description,img:item.img },}" class="catalogue__cell__left">
           <img :src="item.img" class="catalogue__cell__left__img" />
-        </div>
-        <div class="catalogue__cell__right">
-          <h3 class="catalogue__cell__right__title">{{ item.title }} №{{ pageLimit * currentPage + index + 1 }}</h3>
-          <p class="catalogue__cell__right__description">{{ item.description }}</p>
-        </div>
+        </router-link>
+        <!-- </div> -->
+          <div class="catalogue__cell__right">
+            <h3 class="catalogue__cell__right__title">{{ item.title }} №{{ pageLimit * currentPage + index + 1 }}</h3>
+            <p class="catalogue__cell__right__description">{{ item.description }}</p>
+          </div> 
       </div>
    
   </div>
@@ -68,60 +70,70 @@ export default {
           img: slideImages1,
         },
         {
+          id : 2,
           title: "Verkh  ",
           description:
             "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",
           img: slideImages2,
         },
         {
+          id : 3,
           title: "Sandal  ",
           description:
             "2010 - yilda tug'ilgan germaniyada, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages3,
         },
         {
+          id : 4,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages4,
         },
         {
+          id:5,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages5,
         },
         {
+          id:6,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages6,
         },
         {
+          id:7,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages7,
         },
         {
+          id:8,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages8,
         },
         {
+          id:9,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages9,
         },
         {
+          id:10,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages10,
         },
         {
+          id:11,
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
