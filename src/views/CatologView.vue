@@ -7,7 +7,7 @@
           <router-link :to="{path : `catolog/${index+1}`, query: { title: item.title,description:item.description,img:item.img },}" class="catalogue__cell__left">
           <img :src="item.img" class="catalogue__cell__left__img" />
         </router-link>
-        <!-- </div> -->
+        <!-- </div>                                                                                                                                                                                                                                                                                                                            -->
           <div class="catalogue__cell__right">
             <h3 class="catalogue__cell__right__title">{{ item.title }} №{{ pageLimit * currentPage + index + 1 }}</h3>
             <p class="catalogue__cell__right__description">{{ item.description }}</p>

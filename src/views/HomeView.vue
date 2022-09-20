@@ -3,11 +3,9 @@
     <div class="home usp__bgr"></div>
     <div class="home usp__toning"></div>
     <div class="home usp__wrapper">
-      <h1 class="home usp__wrapper__title">Parent breeding enterprise «Elite»</h1>
+      <h1 class="home usp__wrapper__title">O'znaslchilik davlat korxonasi</h1>
       <p class="home usp__wrapper__text">
-        Оne of the largest enterprises in Russia for the production and sale of the seed of manufacturing bulls - it has
-        been going on since 1977 when the Kazan station of artificial insemination of farm animals had transformed into
-        the Republican organization on artificial insemination of farm animals
+        Korxona 1956 yil 28 dekabrda Toshkent davlat otchilik korxonasi oʼrnida, Markaziy Osiyoda yagona boʼlgan “Qishloq xoʼjalik xayvonlarini sunʼiy urugʼlantirish stantsiyasi” nomi bilan tashkil etilgan.
       </p>
       <a class="call-order-form rounded-button">Get an offer</a>
     </div>
@@ -79,13 +77,11 @@
   <section class="dark laboratory-services chess container">
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
-        <h3 class="laboratory-services chess__row__info-container__title">
-          Laboratory for packing and freezing of seed
-        </h3>
+        <h4 class="laboratory-services chess__row__info-container__title">
+          AndroVision: Kompyuter va monitor bilan CASA dasturi
+        </h4>
         <p class="laboratory-services chess__row__info-container__description">
-          Since 2006, the breeding enterprise has frozen the seed of bulls using European technology, using special
-          equipment of the 4th generation, produced in France by the IMV company. In parallel with it, the seed of the
-          most highly valued bulls is packed
+          2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.
         </p>
         <a
           href="#"
@@ -95,7 +91,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="http://api.elitaplem.ru/api/files/b423mJJsd4v54v/a84e49fac644ffb4224db642c94d6834_bull_3.jpg"
+          src="../components/images/lab1.PNG"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -103,12 +99,11 @@
     </div>
     <div class="left-side laboratory-services chess__row">
       <div class="left-side laboratory-services chess__row__info-container">
-        <h3 class="left-side laboratory-services chess__row__info-container__title">
-          The feed quality control laboratory offers services based on the NutriOpt modular animal feeding system
-        </h3>
+        <h4 class="left-side laboratory-services chess__row__info-container__title">
+          MiniJet printeri o’rnatilgan ko’p funksiyali  MPP Uno uskunasi yordamida qadoqlash va markirovkalash
+        </h4>
         <p class="left-side laboratory-services chess__row__info-container__description">
-          The feed quality control laboratory offers services based on a modular system NutriOpt Animal Feeding, which
-          combines accurate analyzes obtained on feed and forage analyzer "FOSS" NIRS DS 2500
+          2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.
         </p>
         <a
           href="#"
@@ -118,7 +113,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          src="http://api.elitaplem.ru/api/files/b423mJJsd4v54v/3ca6a1a249321f24fef1c126b6714320_3.jpg"
+          src="../components/images/lab2.PNG"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -126,13 +121,11 @@
     </div>
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
-        <h3 class="laboratory-services chess__row__info-container__title">
-          Laboratory of Milk Quality Selection Control
-        </h3>
+        <h4 class="laboratory-services chess__row__info-container__title">
+          Urug’larni sifatli saqlash
+        </h4>
         <p class="laboratory-services chess__row__info-container__description">
-          The laboratory for breeding milk quality controls includes: the CombiFoss ™ 7 system, which combines MilkoScan
-          ™ 7 RM and Fossomatic ™ 7, which allows you to simultaneously examine fat, protein, casein, lactose, dry
-          residue, urea
+          Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.
         </p>
         <a
           href="#"
@@ -142,9 +135,33 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="http://api.elitaplem.ru/api/files/b423mJJsd4v54v/cf16940c66b77351eab10bdacf540d10_mol_2.jpg"
+          src="../components/images/lab3.jpg"
           alt="Laboratory of Milk Quality Selection Control"
           class="laboratory-services chess__row__img-container__img"
+        />
+      </div>
+    </div>
+    <div class="left-side laboratory-services chess__row">
+      <div class="left-side laboratory-services chess__row__info-container">
+        <h4 class="left-side laboratory-services chess__row__info-container__title">
+          
+Suyuq azot bilan taminlash
+
+        </h4>
+        <p class="left-side laboratory-services chess__row__info-container__description">
+          Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00
+        </p>
+        <a
+          href="#"
+          class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
+          >More</a
+        >
+      </div>
+      <div class="left-side laboratory-services chess__row__img-container">
+        <img
+          src="../components/images/lab4.jpg"
+          alt="Feed Quality Control Laboratory"
+          class="left-side laboratory-services chess__row__img-container__img"
         />
       </div>
     </div>
@@ -288,6 +305,7 @@ export default {
   z-index: 2;
   color: #fff;
   max-width: 600px;
+  font-family: "Museo Bold";
 }
 .img_box img {
   width: 100%;
@@ -397,7 +415,8 @@ a {
 }
 .chess__row__info-container__description {
   text-align: right;
-  margin: 25px 0;
+  margin-top: 10px;
+  margin-bottom: 25px 
 }
 p,
 span {

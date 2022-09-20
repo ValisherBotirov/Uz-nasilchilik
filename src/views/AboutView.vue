@@ -5,7 +5,11 @@
     <div class="about-us usp__wrapper">
       <h1 class="about-us usp__wrapper__title">Kompaniya haqida</h1>
       <p class="about-us usp__wrapper__text">
-        1954-yili 
+Naslli buqalar soni 1960 yilda 13 boshga, 1968
+yilda 33 boshga yetkazilgan.
+Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va naslchilik boʼyicha ishlab chiqarish “Oʼznaslchilik” korxonasi
+deb yuritila boshlangan.
+
       </p>
     </div>
   </section>
@@ -102,7 +106,8 @@ element.style {
   padding: 0 45px;
   z-index: 2;
   color: #fff;
-  width: 500px;
+  width: 600px;
+  font-family: "Museo Bold";
 }
 .usp__wrapper__title {
   font-size: 35px;
@@ -190,7 +195,11 @@ span {
 img {
   border-radius: 10px;
 }
-
+@media (max-width:600px){
+  .usp__wrapper{
+    width: auto;
+  }
+}
 @media (max-width:930px){
   .chess__row {
     display: flex;
