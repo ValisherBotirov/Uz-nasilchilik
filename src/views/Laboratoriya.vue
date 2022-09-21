@@ -259,9 +259,7 @@ img {
     font-family: "Museo Bold";
   }
   
-  .dep-item{
-    /* max-height: 250px; */
-  }
+  
   .chess__row__info-container__description{
     text-align: left;
     margin: 10px 0;

@@ -91,7 +91,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab1.PNG"
+          src="../components/images/lab1.png"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
