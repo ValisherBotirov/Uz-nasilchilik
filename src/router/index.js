@@ -34,6 +34,11 @@ const router = createRouter({
       name: "about_single",
       component: () => import("../views/AboutSingle.vue"),
     },
+    {
+      path: "/laboratoriya",
+      name: "laboratoriya",
+      component: () => import("../views/Laboratoriya.vue")
+    }
   ],
 });
 

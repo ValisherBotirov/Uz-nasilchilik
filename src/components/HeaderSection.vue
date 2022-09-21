@@ -33,6 +33,7 @@
         <RouterLink to="/about" class="header-link">Biz haqimizda </RouterLink>
         <RouterLink to="/news" class="header-link">Maqolalar</RouterLink>
         <RouterLink to="/catolog" class="header-link">Katolog</RouterLink>
+        <RouterLink to="/laboratoriya" class="header-link">Laboratoriya</RouterLink>
       </nav>
     </div>
     <div class="header-right">
