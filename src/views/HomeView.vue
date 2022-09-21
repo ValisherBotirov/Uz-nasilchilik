@@ -145,7 +145,7 @@
       <div class="left-side laboratory-services chess__row__info-container">
         <h4 class="left-side laboratory-services chess__row__info-container__title">
           
-Suyuq azot bilan taminlash
+    Suyuq azot bilan taminlash
 
         </h4>
         <p class="left-side laboratory-services chess__row__info-container__description">
@@ -164,6 +164,13 @@ Suyuq azot bilan taminlash
           class="left-side laboratory-services chess__row__img-container__img"
         />
       </div>
+    </div>
+  </section>
+  <section class="departament">
+    <h3 class="dep-title">Departament</h3>
+    <div class="departament-group">
+      <div class="dep-item"><img  src="../components/images/departament1.jpg" alt="Departament" class="departament-img"/></div>
+      <div class="dep-item"><img  src="../components/images/departament2.jpg" alt="Departament" class="departament-img"/></div>
     </div>
   </section>
 </template>
@@ -480,6 +487,32 @@ a {
 img {
   border-radius: 10px;
 }
+/* departament */
+.departament{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.dep-title{
+  color: #1f69ea;
+  font-size: 35px;
+  font-family: "Museo Bold";
+  padding-bottom: 10px;
+}
+.departament-group{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.departament-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dep-item{
+  height: 400px;
+}
 
 @media(max-width: 1050px){
   .chess__row,.left-side.chess__row{
@@ -500,6 +533,15 @@ img {
     text-align: left;
     font-size: 24px;
     margin-top: 10px;
+    font-family: "Museo Bold";
+  }
+  .departament-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .dep-item{
+    /* min-height: 200px; */
+    max-height: 300px;
   }
   .chess__row__info-container__description{
     text-align: left;
