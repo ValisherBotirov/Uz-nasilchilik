@@ -3,19 +3,17 @@
     <div class="home usp__bgr"></div>
     <div class="home usp__toning"></div>
     <div class="home usp__wrapper">
-      <h1 class="home usp__wrapper__title">Parent breeding enterprise «Elite»</h1>
+      <h1 class="home usp__wrapper__title">O'znaslchilik davlat korxonasi</h1>
       <p class="home usp__wrapper__text">
-        Оne of the largest enterprises in Russia for the production and sale of the seed of manufacturing bulls - it has
-        been going on since 1977 when the Kazan station of artificial insemination of farm animals had transformed into
-        the Republican organization on artificial insemination of farm animals
+        Korxona 1956 yil 28 dekabrda Toshkent davlat otchilik korxonasi oʼrnida, Markaziy Osiyoda yagona boʼlgan “Qishloq xoʼjalik xayvonlarini sunʼiy urugʼlantirish stantsiyasi” nomi bilan tashkil etilgan.
       </p>
-      <a class="call-order-form rounded-button">Get an offer</a>
+      <a href="https://telegra.ph/OZNASLCHILIK-DAVLAT-KORHONASINING-TARIHI-VA-RIVOZHLANTIRISH-ISTI%D2%9ABOLLARI-09-21" target="_blank" class="call-order-form rounded-button">Batafsil o'qish </a>
     </div>
   </section>
 
   <!-- bannerdan keyingi section -->
   <!-- catalog section start -->
-  <section class="catalog_section">
+  <section class="catalog_section ">
     <h3 class="left-side laboratory-services chess__row__info-container__title">Catalog</h3>
     <p class="catalog_section-paragraph">
       We sell the seed of bulls of the Holstein breed of the best world selection. The productivity of bull mothers is
@@ -25,7 +23,7 @@
       control of milk quality examines samples for fat, protein, content of somatic cells, urea in milk, falsification
       and quality of feeding cows
     </p>
-    <div class="slider_container">
+    <div class="slider_container ">
       <swiper
         :slidesPerView="4"
         :spaceBetween="30"
@@ -41,8 +39,8 @@
           clickable: true,
         }"
         :breakpoints="{
-          '410': {
-            slidesPerView: 1,
+          '300':{
+            slidesPerView : 1
           },
           '640': {
             slidesPerView: 2,
@@ -64,7 +62,7 @@
             <img :src="slide.img" alt="bull_img" class="swiper-lazy" />
             <div class="slide_title">
               <h3>{{ slide.name }}</h3>
-              <a :href="slide.link">All Abouts</a>
+              <router-link to="/catolog">All Abouts</router-link>
             </div>
           </div>
         </swiper-slide>
@@ -73,29 +71,27 @@
     <router-link
       class="rounded-button blue laboratory-services chess__row__info-container__more"
       :to="{name:'catolog'}"
-      >All Catalogs</router-link>
+      >Katalog</router-link>
   </section>
   <!-- catalog section end -->
-  <section class="dark laboratory-services chess">
+  <section class="dark laboratory-services chess container">
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
-        <h3 class="laboratory-services chess__row__info-container__title">
-          Laboratory for packing and freezing of seed
-        </h3>
+        <h4 class="laboratory-services chess__row__info-container__title">
+          AndroVision: Kompyuter va monitor bilan CASA dasturi
+        </h4>
         <p class="laboratory-services chess__row__info-container__description">
-          Since 2006, the breeding enterprise has frozen the seed of bulls using European technology, using special
-          equipment of the 4th generation, produced in France by the IMV company. In parallel with it, the seed of the
-          most highly valued bulls is packed
+          2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.
         </p>
         <a
-          href="/en/services/laboratory-for-packing-and-freezing-of-seed?sid=FCWLX4fEtR"
+          href="#"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</a
         >
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="http://api.elitaplem.ru/api/files/b423mJJsd4v54v/a84e49fac644ffb4224db642c94d6834_bull_3.jpg"
+          src="../components/images/lab1.PNG"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -103,22 +99,21 @@
     </div>
     <div class="left-side laboratory-services chess__row">
       <div class="left-side laboratory-services chess__row__info-container">
-        <h3 class="left-side laboratory-services chess__row__info-container__title">
-          The feed quality control laboratory offers services based on the NutriOpt modular animal feeding system
-        </h3>
+        <h4 class="left-side laboratory-services chess__row__info-container__title">
+          MiniJet printeri o’rnatilgan ko’p funksiyali  MPP Uno uskunasi yordamida qadoqlash va markirovkalash
+        </h4>
         <p class="left-side laboratory-services chess__row__info-container__description">
-          The feed quality control laboratory offers services based on a modular system NutriOpt Animal Feeding, which
-          combines accurate analyzes obtained on feed and forage analyzer "FOSS" NIRS DS 2500
+          2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.
         </p>
         <a
-          href="/en/services/the-feed-quality-control-laboratory-offers-services-based-on-the-nutriopt-modular-animal-feeding-system?sid=RQzIte00ZJ"
+          href="#"
           class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
           >More</a
         >
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          src="http://api.elitaplem.ru/api/files/b423mJJsd4v54v/3ca6a1a249321f24fef1c126b6714320_3.jpg"
+          src="../components/images/lab2.PNG"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -126,27 +121,56 @@
     </div>
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
-        <h3 class="laboratory-services chess__row__info-container__title">
-          Laboratory of Milk Quality Selection Control
-        </h3>
+        <h4 class="laboratory-services chess__row__info-container__title">
+          Urug’larni sifatli saqlash
+        </h4>
         <p class="laboratory-services chess__row__info-container__description">
-          The laboratory for breeding milk quality controls includes: the CombiFoss ™ 7 system, which combines MilkoScan
-          ™ 7 RM and Fossomatic ™ 7, which allows you to simultaneously examine fat, protein, casein, lactose, dry
-          residue, urea
+          Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.
         </p>
         <a
-          href="/en/services/laboratory-of-milk-quality-selection-control?sid=zYDi7RxGBF"
+          href="#"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</a
         >
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="http://api.elitaplem.ru/api/files/b423mJJsd4v54v/cf16940c66b77351eab10bdacf540d10_mol_2.jpg"
+          src="../components/images/lab3.jpg"
           alt="Laboratory of Milk Quality Selection Control"
           class="laboratory-services chess__row__img-container__img"
         />
       </div>
+    </div>
+    <div class="left-side laboratory-services chess__row">
+      <div class="left-side laboratory-services chess__row__info-container">
+        <h4 class="left-side laboratory-services chess__row__info-container__title">
+          
+    Suyuq azot bilan taminlash
+
+        </h4>
+        <p class="left-side laboratory-services chess__row__info-container__description">
+          Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00
+        </p>
+        <a
+          href="#"
+          class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
+          >More</a
+        >
+      </div>
+      <div class="left-side laboratory-services chess__row__img-container">
+        <img
+          src="../components/images/lab4.jpg"
+          alt="Feed Quality Control Laboratory"
+          class="left-side laboratory-services chess__row__img-container__img"
+        />
+      </div>
+    </div>
+  </section>
+  <section class="departament">
+    <h3 class="dep-title">Departament</h3>
+    <div class="departament-group">
+      <div class="dep-item"><img  src="../components/images/departament1.jpg" alt="Departament" class="departament-img"/></div>
+      <div class="dep-item"><img  src="../components/images/departament2.jpg" alt="Departament" class="departament-img"/></div>
     </div>
   </section>
 </template>
@@ -198,8 +222,8 @@ export default {
     return {
       modules: [Keyboard, Navigation, Autoplay, Lazy],
       slides: [
-        { img: slideImg1, name: "Hello world", link: "#" },
-        { img: slideImg2, name: "Hello world", link: "#" },
+        { img: slideImg1, name: "Sandal", link: "#" },
+        { img: slideImg2, name: "Sandal 2", link: "#" },
         { img: slideImg3, name: "Hello world", link: "#" },
         { img: slideImg4, name: "Hello world", link: "#" },
         { img: slideImg5, name: "Hello world", link: "#" },
@@ -242,6 +266,11 @@ export default {
   align-items: flex-end;
 }
 
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
 .usp {
   height: 100vh;
   position: relative;
@@ -279,10 +308,11 @@ export default {
   align-items: center;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 45px;
+  padding: 0 40px;
   z-index: 2;
   color: #fff;
-  width: 600px;
+  max-width: 600px;
+  font-family: "Museo Bold";
 }
 .img_box img {
   width: 100%;
@@ -322,6 +352,11 @@ span {
   border-radius: 30px;
   transition: 0.3s all;
 }
+.rounded-button:hover{
+  background-color: rgb(255, 250, 250);
+  color: black;
+  border: 2px solid black;
+}
 a {
   text-decoration: none;
   font-family: "Museo Regular";
@@ -330,8 +365,8 @@ a {
 
 /* Catalog section start */
 .catalog_section {
-  padding-left: 150px;
-  margin: 6rem 0;
+  width: 90%;
+  margin: 5rem auto;
 }
 
 .slider_container {
@@ -387,7 +422,8 @@ a {
 }
 .chess__row__info-container__description {
   text-align: right;
-  margin: 25px 0;
+  margin-top: 10px;
+  margin-bottom: 25px 
 }
 p,
 span {
@@ -406,6 +442,7 @@ span {
 
 .chess__row__img-container__img {
   width: 100%;
+  object-fit: cover;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -436,7 +473,11 @@ span {
   background-color: #0055e9;
   color: #fff;
 }
-
+.rounded-button.blue:hover{
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+}
 a {
   text-decoration: none;
   font-family: Museo Regular;
@@ -446,6 +487,75 @@ a {
 img {
   border-radius: 10px;
 }
+/* departament */
+.departament{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.dep-title{
+  color: #1f69ea;
+  font-size: 35px;
+  font-family: "Museo Bold";
+  padding-bottom: 10px;
+}
+.departament-group{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.departament-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dep-item{
+  max-height: 400px;
+}
+
+@media(max-width: 1050px){
+  .chess__row,.left-side.chess__row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .chess__row__info-container{
+    width: 100%;
+    text-align: left !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 !important;
+  }
+  .chess__row__img-container{
+    width: 100%;
+  }
+  .chess__row__info-container__title{
+    text-align: left;
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: "Museo Bold";
+  }
+  
+  .dep-item{
+    /* max-height: 250px; */
+  }
+  .chess__row__info-container__description{
+    text-align: left;
+    margin: 10px 0;
+  }
+  .chess__row__img-container__img{
+    max-height: 480px;
+    object-fit: cover;
+  }
+}
+@media (max-width:400px){
+  .departament-group{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 </style>
 
 <script setup>

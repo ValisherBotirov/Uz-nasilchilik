@@ -5,18 +5,22 @@
     <div class="about-us usp__wrapper">
       <h1 class="about-us usp__wrapper__title">Kompaniya haqida</h1>
       <p class="about-us usp__wrapper__text">
-        1954-yili 
+Naslli buqalar soni 1960 yilda 13 boshga, 1968
+yilda 33 boshga yetkazilgan.
+Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va naslchilik boʼyicha ishlab chiqarish “Oʼznaslchilik” korxonasi
+deb yuritila boshlangan.
+
       </p>
     </div>
   </section>
   <!-- two section -->
-  <section class="dark about chess">
-    <div class="about chess__row">
-      <div class="about chess__row__info-container">
-        <h3 class="about chess__row__info-container__title">
+  <section class="dark about-banner chess">
+    <div class="chess__row">
+      <div class="chess__row__info-container">
+        <h3 class="chess__row__info-container__title">
           High performance
         </h3>
-        <p class="about chess__row__info-container__description">
+        <p class="chess__row__info-container__description">
           Over the years, more than 30 million doses of semen have been frozen,
           of which more than 3.5 million from improver bulls, an estimated 735
           heads of manufacturing bulls, 49% of which are recognized as
@@ -25,7 +29,7 @@
           French company IMV technologies of the 4th generation
         </p>
       </div>
-      <div class="about chess__row__img-container">
+      <div class="chess__row__img-container">
         <img
           src="../components/images/bull2.jpg"
           alt=""
@@ -33,23 +37,23 @@
         />
       </div>
     </div>
-    <div class="left-side about chess__row">
-      <div class="left-side about chess__row__info-container">
-        <h3 class="left-side about chess__row__info-container__title">
+    <div class="left-side  chess__row">
+      <div class="chess__row__info-container">
+        <h3 class="chess__row__info-container__title">
           Special approach
         </h3>
-        <p class="left-side about chess__row__info-container__description">
+        <p class="chess__row__info-container__description">
           For beef cattle, the company is carrying out breeding work aimed at
           increasing the growth rate and the quality of muscled carcass (muscled
           hind legs to the hock or the carpal joint, well-developed dewlap,
           pronounced ham, and long lumbar part)
         </p>
       </div>
-      <div class="left-side about chess__row__img-container">
+      <div class="chess__row__img-container">
         <img
           src="../components/images/bull.jpg"
           alt=""
-          class="left-side laboratory-services chess__row__img-container__img"
+          class="aboratory-services chess__row__img-container__img"
         />
       </div>
     </div>
@@ -57,6 +61,11 @@
 </template>
 
 <style scoped lang="scss">
+
+  .about-banner{
+    width: 90%;
+    margin : 0 auto;
+  }
 .about-us.usp {
   margin-bottom: 40px;
 }
@@ -97,7 +106,8 @@ element.style {
   padding: 0 45px;
   z-index: 2;
   color: #fff;
-  width: 500px;
+  width: 600px;
+  font-family: "Museo Bold";
 }
 .usp__wrapper__title {
   font-size: 35px;
@@ -185,4 +195,37 @@ span {
 img {
   border-radius: 10px;
 }
+@media (max-width:600px){
+  .usp__wrapper{
+    width: auto;
+  }
+}
+@media (max-width:930px){
+  .chess__row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .chess__row__img-container__img , .chess__row__img-container{
+    width: 100%;
+    object-fit: cover;
+  }
+  .chess__row__info-container{
+    padding: 0;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .chess__row__info-container__description{
+    text-align: left;
+    width: 100%;
+    margin: 10px 0; 
+  }
+  .chess__row__info-container__title{
+    margin-top: 10px;
+  }
+  .left-side{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  } 
+}
+
 </style>

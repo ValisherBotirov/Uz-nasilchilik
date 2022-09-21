@@ -24,6 +24,21 @@ const router = createRouter({
       name: "catolog",
       component: () => import("../views/CatologView.vue"),
     },
+    {
+      path: "/catolog/:id",
+      name: "catolog-id",
+      component: () => import("../views/CatologSingle.vue"),
+    },
+    {
+      path: "/about_single",
+      name: "about_single",
+      component: () => import("../views/AboutSingle.vue"),
+    },
+    {
+      path: "/laboratoriya",
+      name: "laboratoriya",
+      component: () => import("../views/Laboratoriya.vue")
+    }
   ],
 });
 

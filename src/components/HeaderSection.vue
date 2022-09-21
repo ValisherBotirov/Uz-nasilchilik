@@ -29,10 +29,11 @@
         </RouterLink>
       </div>
       <nav class="header-links">
-        <RouterLink to="/" class="active header-link">Home</RouterLink>
-        <RouterLink to="/about" class="header-link">About </RouterLink>
-        <RouterLink to="/news" class="header-link">News</RouterLink>
-        <RouterLink to="/catolog" class="header-link">Catolog</RouterLink>
+        <RouterLink to="/" class="active header-link">Bosh Menu</RouterLink>
+        <RouterLink to="/about" class="header-link">Biz haqimizda </RouterLink>
+        <RouterLink to="/news" class="header-link">Maqolalar</RouterLink>
+        <RouterLink to="/catolog" class="header-link">Katolog</RouterLink>
+        <RouterLink to="/laboratoriya" class="header-link">Laboratoriya</RouterLink>
       </nav>
     </div>
     <div class="header-right">
@@ -66,7 +67,7 @@
   padding: 12px 0;
   display: none;
   position: absolute;
-  right: 0;
+  right: 15px;
   top:16px;
   z-index: 10;
   }
@@ -76,7 +77,7 @@
     width: 40px;
     height: 4px;
     background: #222;
-    transition: all .2s ease-in-out;
+    transition: all 0.01s ;
   }
   .menu-span:before{
     position: absolute;
@@ -110,8 +111,9 @@
 .header-icon {
   text-decoration: none;
   color: gray;
-  font-size: 24px;
+  font-size: 28px;
   position: relative;
+  margin-top: 20px;
 }
 .header-icon:hover {
   color: #333;
@@ -121,7 +123,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .header-left {
   display: flex;
@@ -150,34 +152,36 @@
 }
 
 .responsive-header{
-  /* display: none; */
+opacity: 0;
   transform: translate(-100% ,-100%);
   width: 100vw;
   height: 100vh;
   position : absolute;
   background-color: rgb(190, 189, 189);
   text-align: center;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .responsive-header.active{
+  opacity: 1;
+  display: block;
   transform: translate(0 ,0); 
 }
 .header-links_res{
-  margin-top: 120px;
+  margin-top: 130px;
 }
 .header-link_res{
   color: white;
   text-decoration: none;
   color: #000000;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 .header-right_res{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .menu{
     display : block;
     color : white;
