@@ -123,7 +123,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .header-left {
   display: flex;
@@ -181,7 +181,7 @@ opacity: 0;
   justify-content: center;
   margin-top: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .menu{
     display : block;
     color : white;
