@@ -113,7 +113,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab2.png"
+          :src="lab2"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -183,6 +183,7 @@ import "swiper/css/pagination";
 import { Autoplay, Keyboard, Navigation, Lazy } from "swiper";
 
 import lab1 from "../components/images/lab1.png"
+import lab2 from "../components/images/lab2.png"
 
 import slideImg1 from "../components/images/slider1.jpg";
 import slideImg2 from "../components/images/slider2.jpg";
