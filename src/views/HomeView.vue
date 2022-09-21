@@ -91,7 +91,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab1.png"
+          :src="lab1"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -181,6 +181,8 @@ import "swiper/css";
 import "swiper/css/lazy";
 import "swiper/css/pagination";
 import { Autoplay, Keyboard, Navigation, Lazy } from "swiper";
+
+import lab1 from "../components/images/lab1.png"
 
 import slideImg1 from "../components/images/slider1.jpg";
 import slideImg2 from "../components/images/slider2.jpg";
