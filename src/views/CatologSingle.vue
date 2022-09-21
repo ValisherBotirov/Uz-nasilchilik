@@ -1,30 +1,28 @@
 <template>
   <div class="container">
-    
     <img :src="route.query.img" alt="">
-    
     <h1 class="title">{{route.query.title}}</h1>
    <div class="content">
     <div class="box">
       <p class="left-text">Zoti</p>
-      <p class="right-text">Qora ola golshtin</p>
+      <p class="right-text">{{route.query.zoti}}</p>
     </div>
     <div class="box">
       <p class="left-text">Tug’lgan yili</p>
-      <p class="right-text">13.01.2017</p>
+      <p class="right-text">{{route.query.birth_date}}</p>
     </div>
     <div class="box">
       <p class="left-text">Tug’lgan joyi</p>
-      <p class="right-text">Germaniya</p>
+      <p class="right-text">{{route.query.birth_place}}</p>
     </div>
     <div class="box">
       <p class="left-text">Onasining mahsuldorligi </p>
-      <p class="right-text">Suti, kg 12327 Sut yog`i  3,61 % [445] Sut oqsilii 3,35 % [413]
+      <p class="right-text">{{route.query.desc_mum}}
 </p>
     </div>
     <div class="box">
       <p class="left-text">Tirik vazni</p>
-      <p class="right-text">1080 kg</p>
+      <p class="right-text">{{route.query.weight}}</p>
     </div>
    </div>
    

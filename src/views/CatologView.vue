@@ -4,7 +4,7 @@
     <div class="catologue-card">
       <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
         <!-- <div class="catalogue__cell__left"> -->
-          <router-link :to="{path : `catolog/${index+1}`, query: { title: item.title,description:item.description,img:item.img },}" class="catalogue__cell__left">
+          <router-link :to="{path : `catolog/${index+1}`, query: { title: item.title,description:item.description,img:item.img,zoti:item.zoti,birth_date:item.birth_date,birth_place:item.birth_place,desc_mum:item.desc_mum,weight:item.weight},}" class="catalogue__cell__left">
           <img :src="item.img" class="catalogue__cell__left__img" />
         </router-link>
         <!-- </div>                                                                                                                                                                                                                                                                                                                            -->
@@ -68,6 +68,11 @@ export default {
           description:
             "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%",
           img: slideImages1,
+          zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id : 2,
@@ -75,6 +80,11 @@ export default {
           description:
             "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",
           img: slideImages2,
+          zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id : 3,
@@ -82,6 +92,11 @@ export default {
           description:
             "2010 - yilda tug'ilgan germaniyada, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages3,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id : 4,
@@ -89,6 +104,11 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages4,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id:5,
@@ -96,6 +116,11 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages5,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id:6,
@@ -103,6 +128,11 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages6,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id:7,
@@ -117,6 +147,11 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages8,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id:9,
@@ -124,6 +159,11 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages9,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id:10,
@@ -131,6 +171,11 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages10,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           id:11,
@@ -138,120 +183,220 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages11,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages12,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages13,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages14,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages15,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages16,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages17,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages18,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages19,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages20,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages21,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages22,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages23,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages24,
+          zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages25,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages26,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages27,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages28,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages29,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
         {
           title: "Sandal  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages30,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg"
         },
       ],
       displaySlide: null,

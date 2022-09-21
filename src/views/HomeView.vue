@@ -7,7 +7,7 @@
       <p class="home usp__wrapper__text">
         Korxona 1956 yil 28 dekabrda Toshkent davlat otchilik korxonasi oʼrnida, Markaziy Osiyoda yagona boʼlgan “Qishloq xoʼjalik xayvonlarini sunʼiy urugʼlantirish stantsiyasi” nomi bilan tashkil etilgan.
       </p>
-      <a class="call-order-form rounded-button">Get an offer</a>
+      <router-link to="/about_single" class="call-order-form rounded-button">Batafsil o'qish </router-link>
     </div>
   </section>
 
@@ -511,7 +511,7 @@ img {
 }
 
 .dep-item{
-  height: 400px;
+  max-height: 400px;
 }
 
 @media(max-width: 1050px){
@@ -537,7 +537,7 @@ img {
   }
   
   .dep-item{
-    max-height: 250px;
+    /* max-height: 250px; */
   }
   .chess__row__info-container__description{
     text-align: left;
