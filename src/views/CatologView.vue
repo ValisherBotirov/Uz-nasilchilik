@@ -4,7 +4,7 @@
     <div class="catologue-card">
       <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
         <!-- <div class="catalogue__cell__left"> -->
-          <router-link :to="{path : `catolog/${index+1}`, query: { title: item.title,description:item.description,img:item.img,zoti:item.zoti,birth_date:item.birth_date,birth_place:item.birth_place,desc_mum:item.desc_mum,weight:item.weight},}" class="catalogue__cell__left">
+          <router-link :to="{path : `catolog/${index+1}`, query: { title: item.title,description:item.description,img:item.img,zoti:item.zoti,birth_date:item.birth_date,birth_place:item.birth_place,desc_mum:item.desc_mum,weight:item.weight,pass_img:item.pass_img},}" class="catalogue__cell__left">
           <img :src="item.img" class="catalogue__cell__left__img" />
         </router-link>
         <!-- </div>                                                                                                                                                                                                                                                                                                                            -->
@@ -54,6 +54,7 @@ import slideImages27 from "../components/images/slider27.jpg";
 import slideImages28 from "../components/images/slider28.jpg";
 import slideImages29 from "../components/images/slider29.jpg";
 import slideImages30 from "../components/images/slider30.jpg";
+// passport images
 
 export default {
   name: "catolog-view",
@@ -72,7 +73,9 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
+
         },
         {
           id : 2,
@@ -84,7 +87,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id : 3,
@@ -96,7 +100,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id : 4,
@@ -108,7 +113,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id:5,
@@ -120,7 +126,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id:6,
@@ -132,7 +139,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id:7,
@@ -140,6 +148,12 @@ export default {
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages7,
+          zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id:8,
@@ -151,7 +165,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id:9,
@@ -163,7 +178,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id:10,
@@ -175,7 +191,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           id:11,
@@ -187,7 +204,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -198,7 +216,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -209,7 +228,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -220,7 +240,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -231,7 +252,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -242,7 +264,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -253,7 +276,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -264,7 +288,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -275,7 +300,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -286,7 +312,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -297,7 +324,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -308,7 +336,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -319,7 +348,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -330,7 +360,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -341,7 +372,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -352,7 +384,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -363,7 +396,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -374,7 +408,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -385,7 +420,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
         {
           title: "Sandal  ",
@@ -396,7 +432,8 @@ export default {
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg"
+          weight : "1080 kg",
+          pass_img : slideImages30
         },
       ],
       displaySlide: null,
