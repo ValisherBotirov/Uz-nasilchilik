@@ -29,10 +29,10 @@
         </RouterLink>
       </div>
       <nav class="header-links">
-        <RouterLink to="/" class="active header-link">Home</RouterLink>
-        <RouterLink to="/about" class="header-link">About </RouterLink>
-        <RouterLink to="/news" class="header-link">News</RouterLink>
-        <RouterLink to="/catolog" class="header-link">Catolog</RouterLink>
+        <RouterLink to="/" class="active header-link">Bosh Menu</RouterLink>
+        <RouterLink to="/about" class="header-link">Biz haqimizda </RouterLink>
+        <RouterLink to="/news" class="header-link">Maqolalar</RouterLink>
+        <RouterLink to="/catolog" class="header-link">Katolog</RouterLink>
       </nav>
     </div>
     <div class="header-right">

@@ -7,7 +7,7 @@
       <p class="home usp__wrapper__text">
         Korxona 1956 yil 28 dekabrda Toshkent davlat otchilik korxonasi oʼrnida, Markaziy Osiyoda yagona boʼlgan “Qishloq xoʼjalik xayvonlarini sunʼiy urugʼlantirish stantsiyasi” nomi bilan tashkil etilgan.
       </p>
-      <router-link to="/about_single" class="call-order-form rounded-button">Batafsil o'qish </router-link>
+      <a href="https://telegra.ph/OZNASLCHILIK-DAVLAT-KORHONASINING-TARIHI-VA-RIVOZHLANTIRISH-ISTI%D2%9ABOLLARI-09-21" target="_blank" class="call-order-form rounded-button">Batafsil o'qish </a>
     </div>
   </section>
 
@@ -62,7 +62,7 @@
             <img :src="slide.img" alt="bull_img" class="swiper-lazy" />
             <div class="slide_title">
               <h3>{{ slide.name }}</h3>
-              <router-link :to="slide.link">All Abouts</router-link>
+              <router-link to="/catolog">All Abouts</router-link>
             </div>
           </div>
         </swiper-slide>
@@ -71,7 +71,7 @@
     <router-link
       class="rounded-button blue laboratory-services chess__row__info-container__more"
       :to="{name:'catolog'}"
-      >All Catalogs</router-link>
+      >Katalog</router-link>
   </section>
   <!-- catalog section end -->
   <section class="dark laboratory-services chess container">
@@ -222,8 +222,8 @@ export default {
     return {
       modules: [Keyboard, Navigation, Autoplay, Lazy],
       slides: [
-        { img: slideImg1, name: "Hello world", link: "#" },
-        { img: slideImg2, name: "Hello world", link: "#" },
+        { img: slideImg1, name: "Sandal", link: "#" },
+        { img: slideImg2, name: "Sandal 2", link: "#" },
         { img: slideImg3, name: "Hello world", link: "#" },
         { img: slideImg4, name: "Hello world", link: "#" },
         { img: slideImg5, name: "Hello world", link: "#" },
