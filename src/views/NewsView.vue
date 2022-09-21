@@ -20,11 +20,11 @@ const data = [
   },
   {
     id : 2, title : "XVI All-Russian competition of operators for artificial insemination of cattle",date:"8/17/2022", description:"Today, on August 17, 2022, the XVI All-Russian competition of operators for artificial insemination of cattle is being held in the city of Izhevsk, Udmurt Republic.",
-    img : "http://api.elitaplem.ru/api/files/b423mJJsd4v54v/62eee55f5ce5e9535cb6f013aeed5f0c_1.jpeg"
+    img : "http://api.elitaplem.ru/api/files/b423mJJsd4v54v/62eee55f5ce5e9535cb6f013aeed5f0c_1.jpeg",url : "https://telegra.ph/dfsfd-09-06"
   },
   {
     id : 3, title : "XVI All-Russian competition of operators for artificial insemination of cattle",date:"8/17/2022", description:"Today, on August 17, 2022, the XVI All-Russian competition of operators for artificial insemination of cattle is being held in the city of Izhevsk, Udmurt Republic.",
-    img : "http://api.elitaplem.ru/api/files/b423mJJsd4v54v/2728f918d3b2f2c76a844866717fdc34_1.jpeg"
+    img : "http://api.elitaplem.ru/api/files/b423mJJsd4v54v/2728f918d3b2f2c76a844866717fdc34_1.jpeg",url : "https://telegra.ph"
   },
   {
     id : 4, title : "XVI All-Russian competition of operators for artificial insemination of cattle",date:"8/17/2022", description:"Today, on August 17, 2022, the XVI All-Russian competition of operators for artificial insemination of cattle is being held in the city of Izhevsk, Udmurt Republic.",
