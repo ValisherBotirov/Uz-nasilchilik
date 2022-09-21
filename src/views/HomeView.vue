@@ -535,13 +535,9 @@ img {
     margin-top: 10px;
     font-family: "Museo Bold";
   }
-  .departament-group{
-    display: flex;
-    flex-direction: column;
-  }
+  
   .dep-item{
-    /* min-height: 200px; */
-    max-height: 300px;
+    max-height: 250px;
   }
   .chess__row__info-container__description{
     text-align: left;
@@ -550,6 +546,12 @@ img {
   .chess__row__img-container__img{
     max-height: 480px;
     object-fit: cover;
+  }
+}
+@media (max-width:400px){
+  .departament-group{
+    display: flex;
+    flex-direction: column;
   }
 }
 
