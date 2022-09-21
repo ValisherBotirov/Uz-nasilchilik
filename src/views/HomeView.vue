@@ -113,7 +113,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab2.PNG"
+          src="../components/images/lab2.png"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
