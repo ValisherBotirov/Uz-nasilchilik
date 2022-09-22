@@ -198,8 +198,8 @@ import "swiper/css/lazy";
 import "swiper/css/pagination";
 import { Autoplay, Keyboard, Navigation, Lazy } from "swiper";
 
-import lab1 from "../components/images/lab1.png"
-import lab2 from "../components/images/lab2.png"
+// import lab1 from "../components/images/lab1.png"
+// import lab2 from "../components/images/lab2.png"
 import lab3 from "../components/images/lab3.jpg"
 import lab4 from "../components/images/lab4.jpg"
 
