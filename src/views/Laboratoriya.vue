@@ -18,7 +18,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          :src="lab1"
+          :src="lab3"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -40,7 +40,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          :src="lab2"
+          :src="lab4"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />

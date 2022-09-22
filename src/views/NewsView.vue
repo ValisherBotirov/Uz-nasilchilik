@@ -10,7 +10,7 @@
         <a :href="item.url" class="blog__cell__info"><span class="blog__cell__info__date">{{item.date}}</span>
         <h3 class="blog__cell__info__title">{{item.title}}
         </h3>
-        <!-- <p class="blog__cell__info__description">{{item.description}}</p> -->
+        
       </a>
       </div>
     </div>
