@@ -18,7 +18,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab1.png"
+          :src="lab1"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -40,7 +40,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab2.png"
+          :src="lab2"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -62,7 +62,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab3.jpg"
+          :src="lab3"
           alt="Laboratory of Milk Quality Selection Control"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -86,7 +86,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab4.jpg"
+          :src="lab4"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -95,7 +95,12 @@
   </section>
   </div>
 </template>
-
+<script setup>
+  import lab1 from "../components/images/lab1.png"
+import lab2 from "../components/images/lab2.png"
+import lab3 from "../components/images/lab3.jpg"
+import lab4 from "../components/images/lab4.jpg"
+</script>
 <style scoped>
   .container{
     width: 90%;

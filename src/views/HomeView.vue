@@ -135,7 +135,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab3.jpg"
+          :src="lab3"
           alt="Laboratory of Milk Quality Selection Control"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -159,7 +159,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
-          src="../components/images/lab4.jpg"
+          :src="lab4"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -169,8 +169,8 @@
   <section class="departament">
     <h3 class="dep-title">Departament</h3>
     <div class="departament-group">
-      <div class="dep-item"><img  src="../components/images/departament1.jpg" alt="Departament" class="departament-img"/></div>
-      <div class="dep-item"><img  src="../components/images/departament2.jpg" alt="Departament" class="departament-img"/></div>
+      <div class="dep-item"><img :src="dep1" alt="Departament" class="departament-img"/></div>
+      <div class="dep-item"><img :src="dep2" alt="Departament" class="departament-img"/></div>
     </div>
   </section>
 </template>
@@ -184,6 +184,11 @@ import { Autoplay, Keyboard, Navigation, Lazy } from "swiper";
 
 import lab1 from "../components/images/lab1.png"
 import lab2 from "../components/images/lab2.png"
+import lab3 from "../components/images/lab3.jpg"
+import lab4 from "../components/images/lab4.jpg"
+
+import dep1 from "../components/images/departament1.jpg"
+import dep2 from "../components/images/departament2.jpg"
 
 import slideImg1 from "../components/images/slider1.jpg";
 import slideImg2 from "../components/images/slider2.jpg";
@@ -539,9 +544,7 @@ img {
     font-family: "Museo Bold";
   }
   
-  .dep-item{
-    /* max-height: 250px; */
-  }
+ 
   .chess__row__info-container__description{
     text-align: left;
     margin: 10px 0;
