@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <h1 class="blog__title">News</h1>
+    <h1 class="blog__title">Maqolalar</h1>
     
     <div class="blog-cell">
       <div class="blog-card" v-for="item,index in data" :key="index">

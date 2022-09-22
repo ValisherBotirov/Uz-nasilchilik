@@ -14,7 +14,7 @@
   <!-- bannerdan keyingi section -->
   <!-- catalog section start -->
   <section class="catalog_section ">
-    <h3 class="left-side laboratory-services chess__row__info-container__title">Catalog</h3>
+    <h3 class="left-side laboratory-services chess__row__info-container__title">Katalog</h3>
     <p class="catalog_section-paragraph">
       We sell the seed of bulls of the Holstein breed of the best world selection. The productivity of bull mothers is
       from 1,0000 to 24,000 kg of milk, fat content from 3.6% to 4.5%, protein content from 3.0 to 4.0%. Bulls are born
@@ -71,7 +71,7 @@
     <router-link
       class="rounded-button blue laboratory-services chess__row__info-container__more"
       :to="{name:'catolog'}"
-      >Katalog</router-link>
+      >Barcha kataloglar</router-link>
   </section>
   <!-- catalog section end -->
   <section class="dark laboratory-services chess container">
@@ -166,15 +166,9 @@
       </div>
     </div>
   </section>
-  <section class="departament">
-    <h3 class="dep-title">Departament</h3>
-    <div class="departament-group">
-      <div class="dep-item"><img :src="dep1" alt="Departament" class="departament-img"/></div>
-      <div class="dep-item"><img :src="dep2" alt="Departament" class="departament-img"/></div>
-    </div>
-  </section>
+  
   <div class="blog">
-    <h1 class="blog__title">News</h1>
+    <h1 class="blog__title"><router-link to="/news" class="blog__title">Maqolalar</router-link></h1>
     
     <div class="blog-cell">
       <div class="blog-card" v-for="item,index in data" :key="index">
@@ -189,6 +183,13 @@
       </div>
     </div>
   </div>
+  <section class="departament">
+    <h3 class="dep-title">Departament</h3>
+    <div class="departament-group">
+      <div class="dep-item"><img :src="dep1" alt="Departament" class="departament-img"/></div>
+      <div class="dep-item"><img :src="dep2" alt="Departament" class="departament-img"/></div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -306,6 +307,8 @@ export default {
 </script>
 
 <style scoped>
+
+ 
 .home.usp {
   margin-bottom: 30px;
   position: relative;
@@ -518,6 +521,7 @@ span {
 .rounded-button.blue {
   background-color: #0055e9;
   color: #fff;
+  font-family: "Museo Bold";
 }
 .rounded-button.blue:hover{
   background-color: #fff;
@@ -572,8 +576,11 @@ a{
 
   }
   .blog__title{
-    color: #0055e9;
     font-size: 35px;
+    font-family: "Museo Bold";
+    color: #0055e9;
+    text-decoration: none;
+
   }
   .blog-cell{
     display: grid;
