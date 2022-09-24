@@ -23,8 +23,8 @@
         <p class="laboratory-services chess__row__info-container__description">
           {{labData.description1}}
         </p>
-       <router-link
-         :to="{path:'laboratoriya',query:{img:lab1,title:'title',description:'dec'} }"
+     <router-link
+         :to="{path:'laboratoriya',query:{img:lab1,title:labData.title1,description:labData.description1} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
@@ -44,8 +44,8 @@
         <p class="left-side laboratory-services chess__row__info-container__description">
         {{labData.description2}}
         </p>
-        <router-link
-         :to="{path:'laboratoriya',query:{img:lab2,title:'title',description:'dec'} }"
+       <router-link
+         :to="{path:'laboratoriya',query:{img:lab2,title:labData.title2,description:labData.description2} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
@@ -65,8 +65,8 @@
         <p class="laboratory-services chess__row__info-container__description">
           {{labData.description3}}
         </p>
-       <router-link
-         :to="{path:'laboratoriya',query:{img:lab3,title:'title',description:'dec'} }"
+     <router-link
+         :to="{path:'laboratoriya',query:{img:lab3,title:labData.title3,description:labData.description3} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
@@ -86,8 +86,8 @@
         <p class="left-side laboratory-services chess__row__info-container__description">
          {{labData.description4}}
         </p>
-         <router-link
-         :to="{path:'laboratoriya',query:{img:lab4,title:'title',description:'dec'} }"
+        <router-link
+         :to="{path:'laboratoriya',query:{img:lab4,title:labData.title4,description:labData.description4} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
