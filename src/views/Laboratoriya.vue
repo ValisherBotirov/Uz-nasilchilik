@@ -1,20 +1,32 @@
 <template>
+  <section class="about-us usp">
+
+    <div class="about-us usp__bgr">
+      <img :src="image" alt="img" class="bg-image">
+    </div>
+    <div class="about-us usp__toning"></div>
+    <div class="about-us usp__wrapper">
+      <h1 class="about-us usp__wrapper__title">{{title}}</h1>
+      <p class="about-us usp__wrapper__text">
+{{description}}
+      </p>
+    </div>
+  </section>
   <div class="container">
     <h2 class="title">Laboratoriya</h2>
     <section class="dark laboratory-services chess container">
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
         <h4 class="laboratory-services chess__row__info-container__title">
-          AndroVision: Kompyuter va monitor bilan CASA dasturi
+        {{labData.title}}
         </h4>
         <p class="laboratory-services chess__row__info-container__description">
-          2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.
+          {{labData.description1}}
         </p>
-        <a
-          href="#"
+       <router-link
+         :to="{path:'laboratoriya',query:{img:lab1,title:'title',description:'dec'} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+          >More</router-link>
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
@@ -27,16 +39,15 @@
     <div class="left-side laboratory-services chess__row">
       <div class="left-side laboratory-services chess__row__info-container">
         <h4 class="left-side laboratory-services chess__row__info-container__title">
-          MiniJet printeri o’rnatilgan ko’p funksiyali  MPP Uno uskunasi yordamida qadoqlash va markirovkalash
+          {{labData.title2}}
         </h4>
         <p class="left-side laboratory-services chess__row__info-container__description">
-          2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.
+        {{labData.description2}}
         </p>
-        <a
-          href="#"
-          class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+        <router-link
+         :to="{path:'laboratoriya',query:{img:lab2,title:'title',description:'dec'} }"
+          class="rounded-button blue laboratory-services chess__row__info-container__more"
+          >More</router-link>
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
@@ -49,16 +60,15 @@
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
         <h4 class="laboratory-services chess__row__info-container__title">
-          Urug’larni sifatli saqlash
+          {{labData.title3}}
         </h4>
         <p class="laboratory-services chess__row__info-container__description">
-          Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.
+          {{labData.description3}}
         </p>
-        <a
-          href="#"
+       <router-link
+         :to="{path:'laboratoriya',query:{img:lab3,title:'title',description:'dec'} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+          >More</router-link>
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
@@ -71,18 +81,15 @@
     <div class="left-side laboratory-services chess__row">
       <div class="left-side laboratory-services chess__row__info-container">
         <h4 class="left-side laboratory-services chess__row__info-container__title">
-          
-    Suyuq azot bilan taminlash
-
+          {{labData.title4}}
         </h4>
         <p class="left-side laboratory-services chess__row__info-container__description">
-          Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00
+         {{labData.description4}}
         </p>
-        <a
-          href="#"
-          class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+         <router-link
+         :to="{path:'laboratoriya',query:{img:lab4,title:'title',description:'dec'} }"
+          class="rounded-button blue laboratory-services chess__row__info-container__more"
+          >More</router-link>
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
@@ -96,22 +103,110 @@
   </div>
 </template>
 <script setup>
-//   import lab1 from "../components/images/lab1.png"
+// import lab1 from "../components/images/lab1.png"
 // import lab2 from "../components/images/lab2.png"
 import lab3 from "../components/images/lab3.jpg"
 import lab4 from "../components/images/lab4.jpg"
+
+import {useRoute} from "vue-router"
+
+const route = useRoute()
+
+
+const labData = {
+  title1:"AndroVision: Kompyuter va monitor bilan CASA dasturi",
+   description1:"2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.",
+   title2:"MiniJet printeri ",
+    description2:"2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.",
+    title3:"Urug’larni sifatli saqlash",
+      description3:"Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.",
+        title4:"Suyuq azot bilan taminlash",
+         description4:"Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00",
+
+}
+
+let image = route.query.img ? route.query.img : lab4
+let title = route.query.title ? route.query.title : labData.title4
+let description = route.query.description? route.query.description : labData.description4
+console.log(title,"title",description,"description")
+console.log(route.query.title)
+
 </script>
+
+
+
 <style scoped>
   .container{
     width: 90%;
     margin: 0 auto;
   }
+
+  about-us.usp {
+  margin-bottom: 40px;
+}
+.usp {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.usp__bgr {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: url(../components/images/lab4.jpg) center center no-repeat; */
+  background-size: cover !important;
+  overflow: hidden;
+}
+
+.bg-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.usp__toning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.usp__wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 45px;
+  z-index: 2;
+  color: #fff;
+  max-width: 750px;
+  font-family: "Museo Bold";
+}
+.usp__wrapper__title {
+  font-size: 35px;
+}
+p,
+span {
+  line-height: 20px;
+}
+
+p,
+span {
+  line-height: 20px;
+}
   
   .title{
     color: #0055e9;
     font-family: "Museo Bold";
     margin-top: 40px;
     padding: 0 20px;
+    font-size: 35px;
   }
   .chess {
   margin-top: 55px;

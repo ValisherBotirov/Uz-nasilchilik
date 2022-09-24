@@ -8,7 +8,7 @@
 Naslli buqalar soni 1960 yilda 13 boshga, 1968
 yilda 33 boshga yetkazilgan.
 Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va naslchilik boʼyicha ishlab chiqarish “Oʼznaslchilik” korxonasi
-deb yuritila boshlangan.
+ deb yuritila boshlangan.
 
       </p>
     </div>
@@ -78,9 +78,7 @@ deb yuritila boshlangan.
   justify-content: center;
   align-items: flex-start;
 }
-element.style {
-  background: url(../components/images/about-bg.jpg) left center no-repeat;
-}
+
 .usp__bgr {
   border-radius: 0;
   position: absolute;

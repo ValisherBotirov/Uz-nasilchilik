@@ -83,11 +83,10 @@
         <p class="laboratory-services chess__row__info-container__description">
           2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.
         </p>
-        <a
-          href="#"
+        <router-link
+         :to="{path:'laboratoriya',query:{img:lab1,title:labData.title1,description:labData.description1} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+          >More</router-link>
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
@@ -105,11 +104,10 @@
         <p class="left-side laboratory-services chess__row__info-container__description">
           2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.
         </p>
-        <a
-          href="#"
-          class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+         <router-link
+         :to="{path:'laboratoriya',query:{img:lab2,title:labData.title2,description:labData.description2} }"
+          class="rounded-button blue laboratory-services chess__row__info-container__more"
+          >More</router-link>
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
@@ -127,11 +125,10 @@
         <p class="laboratory-services chess__row__info-container__description">
           Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.
         </p>
-        <a
-          href="#"
+       <router-link
+         :to="{path:'laboratoriya',query:{img:lab3,title:labData.title3,description:labData.description3} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+          >More</router-link>
       </div>
       <div class="laboratory-services chess__row__img-container">
         <img
@@ -151,11 +148,10 @@
         <p class="left-side laboratory-services chess__row__info-container__description">
           Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00
         </p>
-        <a
-          href="#"
-          class="left-side rounded-button blue laboratory-services chess__row__info-container__more"
-          >More</a
-        >
+          <router-link
+         :to="{path:'laboratoriya',query:{img:lab4,title:labData.title4,description:labData.description4} }"
+          class="rounded-button blue laboratory-services chess__row__info-container__more"
+          >More</router-link>
       </div>
       <div class="left-side laboratory-services chess__row__img-container">
         <img
@@ -201,6 +197,8 @@ import { Autoplay, Keyboard, Navigation, Lazy } from "swiper";
 
 // import lab1 from "../components/images/lab1.png"
 // import lab2 from "../components/images/lab2.png"
+import lab1 from "../components/images/lab3.jpg"
+import lab2 from "../components/images/lab4.jpg"
 import lab3 from "../components/images/lab3.jpg"
 import lab4 from "../components/images/lab4.jpg"
 
@@ -283,6 +281,16 @@ export default {
         { img: slideImg29, name: "Hello world", link: "#" },
         { img: slideImg30, name: "Hello world", link: "#" },
       ],
+      labData:{
+        title1:"AndroVision: Kompyuter va monitor bilan CASA dasturi",
+        description1:"2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.",
+        title2:"MiniJet printeri ",
+        description2:"2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.",
+        title3:"Urug’larni sifatli saqlash",
+        description3:"Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.",
+        title4:"Suyuq azot bilan taminlash",
+        description4:"Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00",
+      },
       data:[
       {
     id : 1, title : "СУНЪИЙ УРУҒЛАНТИРИШ ТИЗИМИДА ҚИЗИЛ-ОЛА ГОЛШТИН ВА АНГЛЕР ЗОТЛИ БУҚАЛАРНИ ТАНЛАШ ҲАМДА ҚИЗИЛ ТУСЛИ СУТ ЙЎНАЛИШИДАГИ ПОДАЛАРНИ ТАКОМИЛЛАШТИРИШ",date:"8/17/2022", description:"Today, on August 17, 2022, the XVI All-Russian competition of operators for artificial insemination of cattle is being held in the city of Izhevsk, Udmurt Republic.",
