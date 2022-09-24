@@ -16,12 +16,8 @@
   <section class="catalog_section ">
     <h3 class="left-side laboratory-services chess__row__info-container__title">Katalog</h3>
     <p class="catalog_section-paragraph">
-      We sell the seed of bulls of the Holstein breed of the best world selection. The productivity of bull mothers is
-      from 1,0000 to 24,000 kg of milk, fat content from 3.6% to 4.5%, protein content from 3.0 to 4.0%. Bulls are born
-      in the USA, Canada, Germany, the Netherlands. All bulls were tested for the carriage of gene anomalies,
-      haplotypes, for the ease of calving of daughters. Product prices are flexible. The laboratory for selection
-      control of milk quality examines samples for fat, protein, content of somatic cells, urea in milk, falsification
-      and quality of feeding cows
+      Хозирда корхонада 9 хил зотга маънсуб бўлган, 100 бошга яқин наслли буқалар яъни голштин қора-ола, 
+      голштин қизил-ола, англер, қизил-дания, швиц, симментал, ангус, герефорд ва бушуев зотили наслли буқалар парваришлаб келинмоқда. 
     </p>
     <div class="slider_container ">
       <swiper
@@ -249,23 +245,23 @@ export default {
     return {
       modules: [Keyboard, Navigation, Autoplay, Lazy],
       slides: [
-        { img: slideImg1, name: "Sandal", link: "#" },
-        { img: slideImg2, name: "Sandal 2", link: "#" },
-        { img: slideImg3, name: "Hello world", link: "#" },
-        { img: slideImg4, name: "Hello world", link: "#" },
-        { img: slideImg5, name: "Hello world", link: "#" },
-        { img: slideImg6, name: "Hello world", link: "#" },
-        { img: slideImg7, name: "Hello world", link: "#" },
-        { img: slideImg8, name: "Hello world", link: "#" },
-        { img: slideImg9, name: "Hello world", link: "#" },
-        { img: slideImg10, name: "Hello world", link: "#" },
-        { img: slideImg11, name: "Hello world", link: "#" },
-        { img: slideImg12, name: "Hello world", link: "#" },
-        { img: slideImg13, name: "Hello world", link: "#" },
-        { img: slideImg14, name: "Hello world", link: "#" },
-        { img: slideImg15, name: "Hello world", link: "#" },
-        { img: slideImg16, name: "Hello world", link: "#" },
-        { img: slideImg17, name: "Hello world", link: "#" },
+        { img: slideImg1, name: "Magic Merlin 121GE", link: "#" },
+        { img: slideImg2, name: "MOHICAN", link: "#" },
+        { img: slideImg3, name: "Torry", link: "#" },
+        { img: slideImg4, name: "Trouba", link: "#" },
+        { img: slideImg5, name: "Untamo", link: "#" },
+        { img: slideImg6, name: "Ursel", link: "#" },
+        { img: slideImg7, name: "Vasit", link: "#" },
+        { img: slideImg8, name: "Katlovan", link: "#" },
+        { img: slideImg9, name: "Heroz", link: "#" },
+        { img: slideImg10, name: "Perfect Game", link: "#" },
+        { img: slideImg11, name: "Pushok", link: "#" },
+        { img: slideImg12, name: "Sherxon", link: "#" },
+        { img: slideImg13, name: "Barbos", link: "#" },
+        { img: slideImg14, name: "Boton", link: "#" },
+        { img: slideImg15, name: "Jacobson Pioner", link: "#" },
+        { img: slideImg16, name: "Kvarts", link: "#" },
+        { img: slideImg17, name: "Monros", link: "#" },
         { img: slideImg18, name: "Hello world", link: "#" },
         { img: slideImg19, name: "Hello world", link: "#" },
         { img: slideImg20, name: "Hello world", link: "#" },

@@ -1,6 +1,6 @@
 <template>
   <div class="catalogue">
-    <h1 class="catalogue__title">Catalog</h1>
+    <h1 class="catalogue__title">Katalog</h1>
     <div class="catologue-card">
       <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
         <!-- <div class="catalogue__cell__left"> -->
@@ -24,23 +24,23 @@
 </template>
 
 <script>
-import slideImages1 from "../components/images/slider1.jpg";
-import slideImages2 from "../components/images/slider2.jpg";
-import slideImages3 from "../components/images/slider3.jpg";
-import slideImages4 from "../components/images/slider4.jpg";
-import slideImages5 from "../components/images/slider5.jpg";
-import slideImages6 from "../components/images/slider6.jpg";
-import slideImages7 from "../components/images/slider7.jpg";
-import slideImages8 from "../components/images/slider8.jpg";
-import slideImages9 from "../components/images/slider9.jpg";
-import slideImages10 from "../components/images/slider10.jpg";
-import slideImages11 from "../components/images/slider11.jpg";
-import slideImages12 from "../components/images/slider12.jpg";
-import slideImages13 from "../components/images/slider13.jpg";
-import slideImages14 from "../components/images/slider14.jpg";
-import slideImages15 from "../components/images/slider15.jpg";
-import slideImages16 from "../components/images/slider16.jpg";
-import slideImages17 from "../components/images/slider17.jpg";
+import slideImages1 from "../components/images/Magic.jpg";
+import slideImages2 from "../components/images/MOHICAN.jpg";
+import slideImages3 from "../components/images/Torry.jpg";
+import slideImages4 from "../components/images/Trouba.jpg";
+import slideImages5 from "../components/images/Untamo.jpg";
+import slideImages6 from "../components/images/Ursel.jpg";
+import slideImages7 from "../components/images/Vasit.jpg";
+import slideImages8 from "../components/images/Katlovan.jpg";
+import slideImages9 from "../components/images/Heroz.jpg";
+import slideImages10 from "../components/images/Perfect.jpg";
+import slideImages11 from "../components/images/Pushok.jpg";
+import slideImages12 from "../components/images/Sherxon.jpg";
+import slideImages13 from "../components/images/Barbos.jpg";
+import slideImages14 from "../components/images/Boton.jpg";
+import slideImages15 from "../components/images/Jacobson.jpg";
+import slideImages16 from "../components/images/Kvarts.jpg";
+import slideImages17 from "../components/images/Monros.jpg";
 import slideImages18 from "../components/images/slider18.jpg";
 import slideImages19 from "../components/images/slider19.jpg";
 import slideImages20 from "../components/images/slider20.jpg";
@@ -53,8 +53,7 @@ import slideImages26 from "../components/images/slider26.jpg";
 import slideImages27 from "../components/images/slider27.jpg";
 import slideImages28 from "../components/images/slider28.jpg";
 import slideImages29 from "../components/images/slider29.jpg";
-import slideImages30 from "../components/images/slider30.jpg";
-// passport images
+import slideImages30 from "../components/images/Monros.jpg";
 
 export default {
   name: "catolog-view",
@@ -65,7 +64,7 @@ export default {
       dataSlide: [
         {
           id: 1,
-          title: "Sapphire ",
+          title: "Magic Merlin 121GE  ",
           description:
             "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%",
           img: slideImages1,
@@ -74,12 +73,12 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+    
 
         },
         {
           id : 2,
-          title: "Verkh  ",
+          title: "MOHICAN  ",
           description:
             "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",
           img: slideImages2,
@@ -88,11 +87,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id : 3,
-          title: "Sandal  ",
+          title: "Torry  ",
           description:
             "2010 - yilda tug'ilgan germaniyada, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages3,
@@ -101,11 +100,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id : 4,
-          title: "Sandal  ",
+          title: "Trouba  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages4,
@@ -114,11 +113,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id:5,
-          title: "Sandal  ",
+          title: "Ursel  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages5,
@@ -127,11 +126,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id:6,
-          title: "Sandal  ",
+          title: "Vasit  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages6,
@@ -140,11 +139,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id:7,
-          title: "Sandal  ",
+          title: "Katlovan  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages7,
@@ -153,11 +152,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id:8,
-          title: "Sandal  ",
+          title: "Heroz  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages8,
@@ -166,11 +165,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id:9,
-          title: "Sandal  ",
+          title: "Perfect Game  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages9,
@@ -179,11 +178,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id:10,
-          title: "Sandal  ",
+          title: "Pushok  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages10,
@@ -192,11 +191,11 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           id:11,
-          title: "Sandal  ",
+          title: "Sherxon  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages11,
@@ -205,10 +204,10 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
-          title: "Sandal  ",
+          title: "Barbos  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages12,
@@ -217,10 +216,10 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
-          title: "Sandal  ",
+          title: "Boton  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages13,
@@ -229,10 +228,10 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
-          title: "Sandal  ",
+          title: "Jacobson Pioner  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages14,
@@ -241,10 +240,10 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
-          title: "Sandal  ",
+          title: "Kvarts  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages15,
@@ -253,10 +252,10 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
-          title: "Sandal  ",
+          title: "Monros  ",
           description:
             "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
           img: slideImages16,
@@ -265,7 +264,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -277,7 +276,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -289,7 +288,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -301,7 +300,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -313,7 +312,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -325,7 +324,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -337,7 +336,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -349,7 +348,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -361,7 +360,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -373,7 +372,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -385,7 +384,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -397,7 +396,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -409,7 +408,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -421,7 +420,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
         {
           title: "Sandal  ",
@@ -433,7 +432,7 @@ export default {
           birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
-          pass_img : slideImages30
+
         },
       ],
       displaySlide: null,
