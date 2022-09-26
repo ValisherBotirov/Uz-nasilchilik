@@ -109,6 +109,16 @@
     </div>
   </section>
   </div>
+  <section class="container">
+    <h2 class="title">Galleriya</h2>
+    <div class="gallery-group">
+      <div class="gal-img_box"><img src="../components/images/dslab1.JPG" alt="img" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab2.JPG" alt="img" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab3.jpg" alt="img3" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab4.JPG" alt="img" class="gal-img"></div>
+      <!-- <div class="gal-img_box"><img src="../components/images/dslab5.CR2" alt="img" class="gal-img"></div> -->
+    </div>
+  </section>
 </template>
 <script setup>
 import lab1 from "../components/images/lab1.jpg"
@@ -345,6 +355,16 @@ img {
   height: 50px;
   border-radius: 30px;
   transition: 0.3s all;
+}
+
+/* photo-gallery */
+.gallery-group{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gal-img{
+  width: 100%;
 }
 
 @media(max-width: 1050px){
