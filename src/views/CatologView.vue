@@ -1,10 +1,7 @@
 <template>
   <div class="catalogue">
-<<<<<<< HEAD
-    <h1 class="catalogue__title">Katolog</h1>
-=======
+
     <h1 class="catalogue__title" data-aos="fade-left" data-aos-duration="1000">Katalog</h1>
->>>>>>> 29e1ccc30e3864aaeb331ff9a7ae86cf581aa099
     <div class="catologue-card">
       <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index" data-aos="fade-right" data-aos-duration="1600">
         <!-- <div class="catalogue__cell__left"> -->
