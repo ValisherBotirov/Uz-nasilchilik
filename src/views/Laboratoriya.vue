@@ -115,7 +115,7 @@
       <div class="gal-img_box"><img src="../components/images/dslab1.png" alt="img" class="gal-img"></div>
       <div class="gal-img_box"><img src="../components/images/dslab2.png" alt="img" class="gal-img"></div>
       <div class="gal-img_box"><img src="../components/images/dslab3.jpg" alt="img3" class="gal-img"></div>
-      <div class="gal-img_box"><img src="../components/images/dslab4.pnggit " alt="img" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab4.png " alt="img" class="gal-img"></div>
       <div class="gal-img_box"><img src="../components/images/dslab5.jpg" alt="img" class="gal-img"></div>
     </div>
   </section>
