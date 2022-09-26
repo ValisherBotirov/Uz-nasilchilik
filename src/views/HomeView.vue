@@ -1,9 +1,9 @@
 <template>
-  <section class="home usp">
-    <div class="home usp__bgr"></div>
+  <section class="home usp" >
+    <div class="home usp__bgr" data-aos="fade-right"></div>
     <div class="home usp__toning"></div>
-    <div class="home usp__wrapper">
-      <h1 class="home usp__wrapper__title">O'znaslchilik davlat korxonasi</h1>
+    <div class="home usp__wrapper" data-aos="fade-left" data-aos-duration="1000">
+      <h1 class="home usp__wrapper__title"  data-aos="fade-left">O'znaslchilik davlat korxonasi</h1>
       <p class="home usp__wrapper__text">
         Korxona 1956 yil 28 dekabrda Toshkent davlat otchilik korxonasi oʼrnida, Markaziy Osiyoda yagona boʼlgan “Qishloq xoʼjalik xayvonlarini sunʼiy urugʼlantirish stantsiyasi” nomi bilan tashkil etilgan.
       </p>
@@ -14,8 +14,8 @@
   <!-- bannerdan keyingi section -->
   <!-- catalog section start -->
   <section class="catalog_section ">
-    <h3 class="left-side laboratory-services chess__row__info-container__title">Katalog</h3>
-    <p class="catalog_section-paragraph">
+    <h3 class="left-side laboratory-services chess__row__info-container__title" data-aos="fade-right" data-aos-duration="700">Katalog</h3>
+    <p class="catalog_section-paragraph" data-aos="fade-right" data-aos-duration="1500">
       We sell the seed of bulls of the Holstein breed of the best world selection. The productivity of bull mothers is
       from 1,0000 to 24,000 kg of milk, fat content from 3.6% to 4.5%, protein content from 3.0 to 4.0%. Bulls are born
       in the USA, Canada, Germany, the Netherlands. All bulls were tested for the carriage of gene anomalies,
@@ -23,7 +23,7 @@
       control of milk quality examines samples for fat, protein, content of somatic cells, urea in milk, falsification
       and quality of feeding cows
     </p>
-    <div class="slider_container ">
+    <div class="slider_container " data-aos="fade-left" data-aos-duration="1800">
       <swiper
         :slidesPerView="4"
         :spaceBetween="30"
@@ -68,7 +68,8 @@
         </swiper-slide>
       </swiper>
     </div>
-    <router-link
+    <router-link 
+      data-aos="fade-right" data-aos-duration="1500"
       class="rounded-button blue laboratory-services chess__row__info-container__more"
       :to="{name:'catolog'}"
       >Barcha kataloglar</router-link>
@@ -76,19 +77,20 @@
   <!-- catalog section end -->
   <section class="dark laboratory-services chess container">
     <div class="laboratory-services chess__row">
-      <div class="laboratory-services chess__row__info-container">
-        <h4 class="laboratory-services chess__row__info-container__title">
+      <div class="laboratory-services chess__row__info-container" data-aos="fade-right" data-aos-duration="1000">
+        <h4 class="laboratory-services chess__row__info-container__title" data-aos="fade-right" data-aos-duration="1000">
           AndroVision: Kompyuter va monitor bilan CASA dasturi
         </h4>
-        <p class="laboratory-services chess__row__info-container__description">
+        <p class="laboratory-services chess__row__info-container__description" data-aos="fade-right" data-aos-duration="1500">
           2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.
         </p>
         <router-link
+        data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab1,title:labData.title1,description:labData.description1} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="laboratory-services chess__row__img-container">
+      <div class="laboratory-services chess__row__img-container" data-aos="fade-left"  data-aos-duration="1700">
         <img
           :src="lab3"
           alt="Лаборатория иммуногенетической экспертизы"
