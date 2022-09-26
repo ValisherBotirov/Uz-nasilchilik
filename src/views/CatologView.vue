@@ -1,5 +1,6 @@
 <template>
   <div class="catalogue">
+
     <h1 class="catalogue__title" data-aos="fade-left" data-aos-duration="1000">Katalog</h1>
     <div class="catologue-card">
       <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index" data-aos="fade-right" data-aos-duration="1600">
@@ -41,19 +42,19 @@ import slideImages14 from "../components/images/Boton.jpg";
 import slideImages15 from "../components/images/Jacobson.jpg";
 import slideImages16 from "../components/images/Kvarts.jpg";
 import slideImages17 from "../components/images/Monros.jpg";
-import slideImages18 from "../components/images/slider18.jpg";
-import slideImages19 from "../components/images/slider19.jpg";
-import slideImages20 from "../components/images/slider20.jpg";
-import slideImages21 from "../components/images/slider21.jpg";
-import slideImages22 from "../components/images/slider22.jpg";
-import slideImages23 from "../components/images/slider23.jpg";
-import slideImages24 from "../components/images/slider24.jpg";
-import slideImages25 from "../components/images/slider25.jpg";
-import slideImages26 from "../components/images/slider26.jpg";
-import slideImages27 from "../components/images/slider27.jpg";
-import slideImages28 from "../components/images/slider28.jpg";
-import slideImages29 from "../components/images/slider29.jpg";
-import slideImages30 from "../components/images/Monros.jpg";
+import slideImages18 from "../components/images/EVRON.jpg";
+import slideImages19 from "../components/images/HEMIN.jpg";
+import slideImages20 from "../components/images/MANOMAH.jpg";
+import slideImages21 from "../components/images/OTELO.jpg";
+import slideImages22 from "../components/images/RUSTIK.jpg";
+import slideImages23 from "../components/images/STEVENSON.jpg";
+import slideImages24 from "../components/images/Trouba.jpg";
+import slideImages25 from "../components/images/Pushok.jpg";
+import slideImages26 from "../components/images/Untamo.jpg";
+import slideImages27 from "../components/images/Torry.jpg";
+import slideImages28 from "../components/images/HEMIN.jpg";
+import slideImages29 from "../components/images/MANOMAH.jpg";
+import slideImages30 from "../components/images/Kvarts.jpg";
 
 export default {
   name: "catolog-view",
@@ -66,7 +67,7 @@ export default {
           id: 1,
           title: "Magic Merlin 121GE  ",
           description:
-            "Born on 10/17/10 in Russia. Line M. Chieftain. Khotent 3.8%, protein 3.30%",
+            "Zoti	Angus. Tug’lgan yili	22.03.2019. Tug’lgan joyi	AQSH. Tirik vazni	860",
           img: slideImages1,
           zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
@@ -80,7 +81,7 @@ export default {
           id : 2,
           title: "MOHICAN  ",
           description:
-            "The Kholmogorsk breed, of Tatarstan type was born on 05/08/13 in Russia. Hope line. Father Pegasus 1210 Russian bull Mothers productivity for lactation of 8300 kg of milk. Fat content 3.82%, protein 3.30%",
+            "Zoti	Gereford. Tug’lgan yili	19.02.2019. Tug’lgan joyi	AQSH. Tirik vazni	770",
           img: slideImages2,
           zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
@@ -93,12 +94,12 @@ export default {
           id : 3,
           title: "Torry  ",
           description:
-            "2010 - yilda tug'ilgan germaniyada, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Angus. Tug’lgan yili	01.01.2017. Tug’lgan joyi	Germaniya. Tirik vazni	1010",
           img: slideImages3,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % Sut oqsilii 3,35 %",
           weight : "1080 kg",
 
         },
@@ -106,46 +107,46 @@ export default {
           id : 4,
           title: "Trouba  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Angler. Tug’lgan yili	29.06.2016. Tug’lgan joyi	Germaniya. Onasining mahsuldorligi 	Suti, kg 10859.	Sut yog`i  4,04 %. Sut oqsilii 3,51 %. Tirik vazni	940",
           img: slideImages4,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 %  Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
 
         },
         {
           id:5,
-          title: "Ursel  ",
+          title: "Untamo  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Qizil ola golshtin. Tug’lgan yili	24.11.2016. Tug’lgan joyi	Germaniya. Onasining mahsuldorligi 	Suti, kg 12289.	Sut yog`i  3,5 %. Sut oqsilii 3,12 %. Tirik vazni	1030",
           img: slideImages5,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 %  Sut oqsilii 3,35 %",
           weight : "1080 kg",
 
         },
         {
           id:6,
-          title: "Vasit  ",
+          title: "Ursel ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Qora ola golshtin. Tug’lgan yili	13.01.2017. Tug’lgan joyi	Germaniya. Onasining mahsuldorligi 	Suti, kg 12327.	Sut yog`i  3,61 %. Sut oqsilii 3,35 %. Tirik vazni	1080",
           img: slideImages6,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % Sut oqsilii 3,35 %",
           weight : "1080 kg",
 
         },
         {
           id:7,
-          title: "Katlovan  ",
+          title: "Vasit  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Shvits. Tug’lgan yili	11.01.2016. Tug’lgan joyi	Germaniya. Onasining mahsuldorligi 	Suti, kg 11749. Sut yog`i  4,54 %.	Sut oqsilii 3,75 %. Tirik vazni	1040",
           img: slideImages7,
           zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
@@ -156,85 +157,265 @@ export default {
         },
         {
           id:8,
-          title: "Heroz  ",
+          title: "Katlovan  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Bushuev. Tug’lgan yili	19.12.2013. Tug’lgan joyi	O’zbekiston. Onasining mahsuldorligi 	Suti, kg 4915. Sut yog`i  4,2 %.	Sut oqsilii.Tirik vazni	850",
           img: slideImages8,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 9445 Sut yog`i 4,81 % [445] Sut oqsilii 4,25 % [413]",
           weight : "1080 kg",
 
         },
         {
           id:9,
-          title: "Perfect Game  ",
+          title: "Heroz ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Simental. Tug’lgan yili	13.11.2016. Tug’lgan joyi	Germaniya.Onasining mahsuldorligi 	Suti, kg 11415.	Sut yog`i  3,98 %.	Sut oqsilii 3,5 %. Tirik vazni	1050",
           img: slideImages9,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 12330 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
 
         },
         {
           id:10,
-          title: "Pushok  ",
+          title: "Perfect Game  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Angus. Tug’lgan yili	24.12.2018. Tug’lgan joyi	AQSH. Tirik vazni	780",
           img: slideImages10,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 12027 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
 
         },
         {
           id:11,
-          title: "Sherxon  ",
+          title: "Pushok  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Qora ola golshtin. Tug’lgan yili	23.07.2020. Tug’lgan joyi	Belarus. Onasining mahsuldorligi 	Suti, kg 11172.	Sut yog`i  3,9 %.	Sut oqsilii 3,27 %. Tirik vazni	560",
           img: slideImages11,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          desc_mum : "Suti, kg 10327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Sherxon  ",
+          description:
+            "Zoti	Bushuev. Tug’lgan yili	27.03.2020. Tug’lgan joyi	O’zbekiston. Onasining mahsuldorligi 	Suti, kg 3965.	Sut yog`i  3,9 %.	Sut oqsilii.Tirik vazni	400",
+          img: slideImages12,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9545 Sut yog`i 4,61 % [445] Sut oqsilii 4,35 % [413]",
           weight : "1080 kg",
 
         },
         {
           title: "Barbos  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages12,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Boton  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Bushuev. Tug’lgan yili	02.05.2020. Tug’lgan joyi	O’zbekiston. Onasining mahsuldorligi 	Suti, kg 4005.	Sut yog`i  4,2 %.	Sut oqsilii.Tirik vazni	480",
           img: slideImages13,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 10150 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Boton   ",
+          description:
+            "Zoti	Qora ola golshtin. Tug’lgan yili	03.04.2020. Tug’lgan joyi	O`zbekiston. Onasining mahsuldorligi 	Suti, kg 10250.	Sut yog`i  3,8 %.	Sut oqsilii. Tirik vazni	640",
+          img: slideImages14,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9540 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Jacobson Pioner ",
+          description:
+            "Zoti	Angus. Tug’lgan yili	15.02.2019. Tug’lgan joyi	AQSH. Tirik vazni	750",
+          img: slideImages15,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9845 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Kvarts   ",
+          description:
+            "Zoti	Qora ola golshtin. Tug’lgan yili	08.09.2020. Tug’lgan joyi	Belarus. Onasining mahsuldorligi 	Suti, kg 11127.	Sut yog`i  3,86 %.	Sut oqsilii 3,47 %. Tirik vazni	500",
+          img: slideImages16,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9595 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Monros ",
+          description:
+            "Zoti	Qora ola golshtin. Tug’lgan yili	29.08.2020. Tug’lgan joyi	O`zbekiston. Onasining mahsuldorligi 	Suti, kg 10065.	Sut yog`i  4,1 %.	Sut oqsilii. Tirik vazni	500",
+          img: slideImages17,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9745 Sut yog`i 3,61 %. Sut oqsilii 3,35 %",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "EVRON     DE 08 16178334",
+          description:
+            "Zoti Simmental. Tug'ilgan yili 08.12.2015. Tug'ilgan joyi Germaniya. Onasining sut mahsuldorligi   11652",
+          img: slideImages18,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9549 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "HEMIN  DE 0008 16488942",
+          description:
+            "Zoti Simmental. Tug'ilgan yili 16.11.2016. Tug'ilgan joyi Germaniya. Onasinig sut mahsuldorligi     11172",
+          img: slideImages19,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9945 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "MANOMAH DE 0008 16488942",
+          description:
+            "Zoti Simmental. Tug'ilgan yili 02.02.2016. Tug'ilgan joyi Germaniya. Onasining sut mahsuldorligi 11402",
+          img: slideImages20,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9555 Sut yog`i 3,61 % Sut oqsilii 3,35 %",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "OTELO  DE 0008 16561211",
+          description:
+            "Zoti Simmental.Tug'ilgan yili 26.07.2016. Tug'ilgan joyi Germaniya. Onasinig sut mahsuldorligi 9545",
+          img: slideImages21,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 9545 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "RUSTIK DE 0008 16488942",
+          description:
+            "Zoti Simmental. Tug'ilgan yili 15.08.2016. Tug'ilgan joyi Germaniya. Onasinig sut mahsuldorligi 11582",
+          img: slideImages22,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
           desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
           weight : "1080 kg",
 
         },
         {
-          title: "Jacobson Pioner  ",
+          title: "STEVENSON WEIGH USA 911737",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages14,
+            "Zoti Angus. Tug'ilgan yili 31.01.2019. Tug'ilgan joyi AQSH",
+          img: slideImages23,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Trouba  ",
+          description:
+            "Zoti	Angler. Tug’lgan yili	29.06.2016. Tug’lgan joyi	Germaniya. Onasining mahsuldorligi 	Suti, kg 10859.	Sut yog`i  4,04 %. Sut oqsilii 3,51 %. Tirik vazni	940",
+          img: slideImages24,
+          zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Pushok  ",
+          description:
+            "Zoti	Qora ola golshtin. Tug’lgan yili	23.07.2020. Tug’lgan joyi	Belarus. Onasining mahsuldorligi 	Suti, kg 11172.	Sut yog`i  3,9 %.	Sut oqsilii 3,27 %. Tirik vazni	560",
+          img: slideImages25,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Untamo  ",
+          description:
+            "Zoti	Qizil ola golshtin. Tug’lgan yili	24.11.2016. Tug’lgan joyi	Germaniya. Onasining mahsuldorligi 	Suti, kg 12289.	Sut yog`i  3,5 %. Sut oqsilii 3,12 %. Tirik vazni	1030",
+          img: slideImages26,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "Torry  ",
+          description:
+            "Zoti	Angus. Tug’lgan yili	01.01.2017. Tug’lgan joyi	Germaniya. Tirik vazni	1010",
+          img: slideImages27,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "HEMIN DE 0008 16488942 ",
+          description:
+            "Zoti Simmental. Tug'ilgan yili 16.11.2016. Tug'ilgan joyi Germaniya. Onasinig sut mahsuldorligi     11172",
+          img: slideImages28,
+             zoti : "Qora ola golshtin",
+          birth_date : "13.01.2017",
+          birth_place  : "Germaniya",
+          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
+          weight : "1080 kg",
+
+        },
+        {
+          title: "MANOMAH  ",
+          description:
+            "Zoti Simmental. Tug'ilgan yili 02.02.2016. Tug'ilgan joyi Germaniya. Onasining sut mahsuldorligi 11402",
+          img: slideImages29,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
           birth_place  : "Germaniya",
@@ -245,187 +426,7 @@ export default {
         {
           title: "Kvarts  ",
           description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages15,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Monros  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages16,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages17,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages18,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages19,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages20,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages21,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages22,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages23,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages24,
-          zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages25,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages26,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages27,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages28,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
-          img: slideImages29,
-             zoti : "Qora ola golshtin",
-          birth_date : "13.01.2017",
-          birth_place  : "Germaniya",
-          desc_mum : "Suti, kg 12327 Sut yog`i 3,61 % [445] Sut oqsilii 3,35 % [413]",
-          weight : "1080 kg",
-
-        },
-        {
-          title: "Sandal  ",
-          description:
-            "Born on August 24, 2010, in the Agricultural Production Association named after Vakhitov, Kukmorsky District. Line Reflection Sovering. Kholmogorsky prody Tatarstan type",
+            "Zoti	Qora ola golshtin. Tug’lgan yili	08.09.2020. Tug’lgan joyi	Belarus. Onasining mahsuldorligi 	Suti, kg 11127.	Sut yog`i  3,86 %.	Sut oqsilii 3,47 %. Tirik vazni	500",
           img: slideImages30,
              zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
