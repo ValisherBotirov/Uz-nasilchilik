@@ -16,8 +16,8 @@
   <section class="catalog_section ">
     <h3 class="left-side laboratory-services chess__row__info-container__title">Katalog</h3>
     <p class="catalog_section-paragraph">
-      Хозирда корхонада 9 хил зотга маънсуб бўлган, 100 бошга яқин наслли буқалар яъни голштин қора-ола, 
-      голштин қизил-ола, англер, қизил-дания, швиц, симментал, ангус, герефорд ва бушуев зотили наслли буқалар парваришлаб келинмоқда. 
+      Xozirda korxonada 9 xil zotga maʼnsub bo‘lgan, 100 boshga yaqin naslli buqalar yani golshtin qora-ola,
+       golshtin qizil-ola, angler, qizil-daniya, shvits, simmental, angus, gereford va bushuyev zotili naslli buqalar parvarishlab kelinmoqda. 
     </p>
     <div class="slider_container ">
       <swiper
