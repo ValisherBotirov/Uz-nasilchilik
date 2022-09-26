@@ -32,7 +32,7 @@
         <RouterLink to="/" class="active header-link">Bosh menu</RouterLink>
         <RouterLink to="/about" class="header-link">Biz haqimizda </RouterLink>
         <RouterLink to="/news" class="header-link">Maqolalar</RouterLink>
-        <RouterLink to="/catolog" class="header-link">Katolog</RouterLink>
+        <RouterLink to="/catolog" class="header-link">Katalog</RouterLink>
         <RouterLink to="/laboratoriya" class="header-link">Laboratoriya</RouterLink>
       </nav>
     </div>

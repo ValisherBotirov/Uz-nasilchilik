@@ -6,71 +6,77 @@
     </div>
     <div class="about-us usp__toning"></div>
     <div class="about-us usp__wrapper">
-      <h1 class="about-us usp__wrapper__title">{{title}}</h1>
-      <p class="about-us usp__wrapper__text">
+      <h1 class="about-us usp__wrapper__title" data-aos="fade-left" data-aos-duration="1000">{{title}}</h1>
+      <p class="about-us usp__wrapper__text" data-aos="fade-left" data-aos-duration="1600">
 {{description}}
       </p>
     </div>
   </section>
   <div class="container">
-    <h2 class="title">Laboratoriya</h2>
+    <h2 class="title" data-aos="fade-left" data-aos-duration="1000">Laboratoriya</h2>
     <section class="dark laboratory-services chess container">
     <div class="laboratory-services chess__row">
-      <div class="laboratory-services chess__row__info-container">
-        <h4 class="laboratory-services chess__row__info-container__title">
+      <div class="laboratory-services chess__row__info-container" data-aos="fade-right" data-aos-duration="1000">
+        <h4 class="laboratory-services chess__row__info-container__title" data-aos="fade-right" data-aos-duration="1500">
         {{labData.title1}}
         </h4>
-        <p class="laboratory-services chess__row__info-container__description">
+        <p class="laboratory-services chess__row__info-container__description" data-aos="fade-right" data-aos-duration="2200">
           {{labData.description1}}
         </p>
      <router-link
+     @click="realoadPage"
+     data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab1,title:labData.title1,description:labData.description1} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="laboratory-services chess__row__img-container">
+      <div class="laboratory-services chess__row__img-container" data-aos="fade-left"  data-aos-duration="1700">
         <img
-          :src="lab3"
+          :src="lab1"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
       </div>
     </div>
     <div class="left-side laboratory-services chess__row">
-      <div class="left-side laboratory-services chess__row__info-container">
-        <h4 class="left-side laboratory-services chess__row__info-container__title">
+      <div class="left-side laboratory-services chess__row__info-container" data-aos="fade-left" data-aos-duration="1000">
+        <h4 class="left-side laboratory-services chess__row__info-container__title" data-aos="fade-left" data-aos-duration="1500">
           {{labData.title2}}
         </h4>
-        <p class="left-side laboratory-services chess__row__info-container__description">
+        <p class="left-side laboratory-services chess__row__info-container__description" data-aos="fade-left" data-aos-duration="2200">
         {{labData.description2}}
         </p>
        <router-link
+       @click="realoadPage"
+       data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab2,title:labData.title2,description:labData.description2} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="left-side laboratory-services chess__row__img-container">
+      <div class="left-side laboratory-services chess__row__img-container" data-aos="fade-right"  data-aos-duration="1700">
         <img
-          :src="lab4"
+          :src="lab2"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
       </div>
     </div>
     <div class="laboratory-services chess__row">
-      <div class="laboratory-services chess__row__info-container">
+      <div class="laboratory-services chess__row__info-container" data-aos="fade-right" data-aos-duration="1000">
         <h4 class="laboratory-services chess__row__info-container__title">
           {{labData.title3}}
         </h4>
-        <p class="laboratory-services chess__row__info-container__description">
+        <p class="laboratory-services chess__row__info-container__description" data-aos="fade-right" data-aos-duration="1500">
           {{labData.description3}}
         </p>
      <router-link
+     @click="realoadPage"
+     data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab3,title:labData.title3,description:labData.description3} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="laboratory-services chess__row__img-container">
+      <div class="laboratory-services chess__row__img-container" data-aos="fade-left"  data-aos-duration="1700">
         <img
           :src="lab3"
           alt="Laboratory of Milk Quality Selection Control"
@@ -79,19 +85,21 @@
       </div>
     </div>
     <div class="left-side laboratory-services chess__row">
-      <div class="left-side laboratory-services chess__row__info-container">
-        <h4 class="left-side laboratory-services chess__row__info-container__title">
+      <div class="left-side laboratory-services chess__row__info-container" data-aos="fade-left" data-aos-duration="1000">
+        <h4 class="left-side laboratory-services chess__row__info-container__title" data-aos="fade-left" data-aos-duration="1500">
           {{labData.title4}}
         </h4>
-        <p class="left-side laboratory-services chess__row__info-container__description">
+        <p class="left-side laboratory-services chess__row__info-container__description" data-aos="fade-left" data-aos-duration="2200">
          {{labData.description4}}
         </p>
         <router-link
+        @click="realoadPage"
+        data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab4,title:labData.title4,description:labData.description4} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="left-side laboratory-services chess__row__img-container">
+      <div class="left-side laboratory-services chess__row__img-container" data-aos="fade-right"  data-aos-duration="1700">
         <img
           :src="lab4"
           alt="Feed Quality Control Laboratory"
@@ -103,8 +111,8 @@
   </div>
 </template>
 <script setup>
-// import lab1 from "../components/images/lab1.png"
-// import lab2 from "../components/images/lab2.png"
+import lab1 from "../components/images/lab1.jpg"
+import lab2 from "../components/images/lab2.jpg"
 import lab3 from "../components/images/lab3.jpg"
 import lab4 from "../components/images/lab4.jpg"
 
@@ -128,8 +136,10 @@ const labData = {
 let image = route.query.img ? route.query.img : lab4
 let title = route.query.title ? route.query.title : labData.title4
 let description = route.query.description? route.query.description : labData.description4
-console.log(title,"title",description,"description")
-console.log(route.query.title)
+
+const realoadPage = () =>{
+  window.location.reload()
+}
 
 </script>
 

@@ -1,9 +1,9 @@
 <template>
   <div class="blog">
-    <h1 class="blog__title">Maqolalar</h1>
+    <h1 class="blog__title" data-aos="fade-left" data-aos-duration="1000">Maqolalar</h1>
     
     <div class="blog-cell">
-      <div class="blog-card" v-for="item,index in data" :key="index">
+      <div class="blog-card" v-for="item,index in data" :key="index" data-aos="fade-right" data-aos-duration="1600">
         <div class="img-container">
           <img :src="item.img" class="blog-img"/>
         </div>
