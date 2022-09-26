@@ -2,10 +2,10 @@
     <div class="responsive-header" :class="{'active':toogleBtn}">
       
     <div class="header-links_res"  >
-        <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Home</RouterLink>
-        <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">About </RouterLink>
-        <RouterLink to="/news" class="header-link_res" @click="toogleBtn=!toogleBtn">News</RouterLink>
-        <RouterLink to="/catolog" class="header-link_res" @click="toogleBtn=!toogleBtn">Catolog</RouterLink>
+        <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Boah menu</RouterLink>
+        <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">Biz haqimizda </RouterLink>
+        <RouterLink to="/news" class="header-link_res" @click="toogleBtn=!toogleBtn">Maqolalar</RouterLink>
+        <RouterLink to="/catolog" class="header-link_res" @click="toogleBtn=!toogleBtn">Katalog</RouterLink>
         <RouterLink to="/laboratoriya" class="header-link_res" @click="toogleBtn=!toogleBtn">Laboratoriya</RouterLink>
       </div>
       <div class="header-right_res">
