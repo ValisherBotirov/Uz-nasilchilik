@@ -6,6 +6,7 @@
         <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">About </RouterLink>
         <RouterLink to="/news" class="header-link_res" @click="toogleBtn=!toogleBtn">News</RouterLink>
         <RouterLink to="/catolog" class="header-link_res" @click="toogleBtn=!toogleBtn">Catolog</RouterLink>
+        <RouterLink to="/laboratoriya" class="header-link_res" @click="toogleBtn=!toogleBtn">Laboratoriya</RouterLink>
       </div>
       <div class="header-right_res">
       <div class="header-right_items">
