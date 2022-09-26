@@ -88,7 +88,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container" data-aos="fade-left"  data-aos-duration="1700">
         <img
-          :src="lab3"
+          :src="lab1"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -110,7 +110,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container" data-aos="fade-right"  data-aos-duration="1700">
         <img
-          :src="lab4"
+          :src="lab2"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -201,10 +201,9 @@ import "swiper/css/lazy";
 import "swiper/css/pagination";
 import { Autoplay, Keyboard, Navigation, Lazy } from "swiper";
 
-// import lab1 from "../components/images/lab1.png"
-// import lab2 from "../components/images/lab2.png"
-import lab1 from "../components/images/lab3.jpg"
-import lab2 from "../components/images/lab4.jpg"
+
+import lab1 from "../components/images/lab1.jpg"
+import lab2 from "../components/images/lab2.jpg"
 import lab3 from "../components/images/lab3.jpg"
 import lab4 from "../components/images/lab4.jpg"
 

@@ -24,6 +24,7 @@
           {{labData.description1}}
         </p>
      <router-link
+     @click="realoadPage"
      data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab1,title:labData.title1,description:labData.description1} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
@@ -31,7 +32,7 @@
       </div>
       <div class="laboratory-services chess__row__img-container" data-aos="fade-left"  data-aos-duration="1700">
         <img
-          :src="lab3"
+          :src="lab1"
           alt="Лаборатория иммуногенетической экспертизы"
           class="laboratory-services chess__row__img-container__img"
         />
@@ -46,6 +47,7 @@
         {{labData.description2}}
         </p>
        <router-link
+       @click="realoadPage"
        data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab2,title:labData.title2,description:labData.description2} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
@@ -53,7 +55,7 @@
       </div>
       <div class="left-side laboratory-services chess__row__img-container" data-aos="fade-right"  data-aos-duration="1700">
         <img
-          :src="lab4"
+          :src="lab2"
           alt="Feed Quality Control Laboratory"
           class="left-side laboratory-services chess__row__img-container__img"
         />
@@ -68,6 +70,7 @@
           {{labData.description3}}
         </p>
      <router-link
+     @click="realoadPage"
      data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab3,title:labData.title3,description:labData.description3} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
@@ -90,6 +93,7 @@
          {{labData.description4}}
         </p>
         <router-link
+        @click="realoadPage"
         data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab4,title:labData.title4,description:labData.description4} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
@@ -107,8 +111,8 @@
   </div>
 </template>
 <script setup>
-// import lab1 from "../components/images/lab1.png"
-// import lab2 from "../components/images/lab2.png"
+import lab1 from "../components/images/lab1.jpg"
+import lab2 from "../components/images/lab2.jpg"
 import lab3 from "../components/images/lab3.jpg"
 import lab4 from "../components/images/lab4.jpg"
 
@@ -132,8 +136,10 @@ const labData = {
 let image = route.query.img ? route.query.img : lab4
 let title = route.query.title ? route.query.title : labData.title4
 let description = route.query.description? route.query.description : labData.description4
-console.log(title,"title",description,"description")
-console.log(route.query.title)
+
+const realoadPage = () =>{
+  window.location.reload()
+}
 
 </script>
 
