@@ -66,7 +66,7 @@ export default {
           id: 1,
           title: "Magic Merlin 121GE  ",
           description:
-            "Born on 10/17/10 in Russia. Line M. Chieftain. Khotent 3.8%, protein 3.30%",
+            "Magic Merlin 121G USA 91107 Zoti	Angus Tug’lgan yili	22.03.2019 Tug’lgan joyi	AQSH Tirik vazni	860",
           img: slideImages1,
           zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
