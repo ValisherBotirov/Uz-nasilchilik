@@ -1,8 +1,8 @@
 <template>
   <div class="catalogue">
-    <h1 class="catalogue__title">Katalog</h1>
+    <h1 class="catalogue__title" data-aos="fade-left" data-aos-duration="1000">Katalog</h1>
     <div class="catologue-card">
-      <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index">
+      <div class="catalogue__cell" v-for="(item, index) in displaySlide" :key="index" data-aos="fade-right" data-aos-duration="1600">
         <!-- <div class="catalogue__cell__left"> -->
           <router-link :to="{path : `catolog/${index+1}`, query: { title: item.title,description:item.description,img:item.img,zoti:item.zoti,birth_date:item.birth_date,birth_place:item.birth_place,desc_mum:item.desc_mum,weight:item.weight,pass_img:item.pass_img},}" class="catalogue__cell__left">
           <img :src="item.img" class="catalogue__cell__left__img" />
