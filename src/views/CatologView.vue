@@ -66,7 +66,7 @@ export default {
           id: 1,
           title: "Magic Merlin 121GE  ",
           description:
-            "Born on 10/17/10 in Russia. Line M. Chieftain. Kholmogory breed of Tatarstan type. Father Lom 826 Russian bull. Mother's productivity per lactation 7969 kg of milk. Fat content 3.8%, protein 3.30%",
+            "Born on 10/17/10 in Russia. Line M. Chieftain. Khotent 3.8%, protein 3.30%",
           img: slideImages1,
           zoti : "Qora ola golshtin",
           birth_date : "13.01.2017",
@@ -492,7 +492,8 @@ export default {
   gap: 30px;
 }
 .catalogue__cell{
-  display: flex;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
   gap: 15px;
   justify-content: center;
   align-items: center;
@@ -547,7 +548,8 @@ span {
 
 @media (max-width:1110px){
   .catalogue__cell{
-    flex-direction: column;
+    grid-template-columns: 1fr ;
+    align-items: initial;
   }
   .catalogue__cell__left{
     width: 100%;
