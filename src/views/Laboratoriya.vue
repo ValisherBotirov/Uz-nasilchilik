@@ -18,7 +18,7 @@
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container">
         <h4 class="laboratory-services chess__row__info-container__title">
-        {{labData.title}}
+        {{labData.title1}}
         </h4>
         <p class="laboratory-services chess__row__info-container__description">
           {{labData.description1}}
@@ -118,7 +118,7 @@ const labData = {
    description1:"2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.",
    title2:"MiniJet printeri ",
     description2:"2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.",
-    title3:"Urug’larni sifatli saqlash",
+    title3:"Urug’larni saqlash / Genetik baza",
       description3:"Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.",
         title4:"Suyuq azot bilan taminlash",
          description4:"Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00",

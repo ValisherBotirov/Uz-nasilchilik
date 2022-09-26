@@ -74,10 +74,10 @@
   <section class="dark laboratory-services chess container">
     <div class="laboratory-services chess__row">
       <div class="laboratory-services chess__row__info-container" data-aos="fade-right" data-aos-duration="1000">
-        <h4 class="laboratory-services chess__row__info-container__title" data-aos="fade-right" data-aos-duration="1000">
+        <h4 class="laboratory-services chess__row__info-container__title" data-aos="fade-right" data-aos-duration="1500">
           AndroVision: Kompyuter va monitor bilan CASA dasturi
         </h4>
-        <p class="laboratory-services chess__row__info-container__description" data-aos="fade-right" data-aos-duration="1500">
+        <p class="laboratory-services chess__row__info-container__description" data-aos="fade-right" data-aos-duration="2200">
           2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.
         </p>
         <router-link
@@ -95,19 +95,20 @@
       </div>
     </div>
     <div class="left-side laboratory-services chess__row">
-      <div class="left-side laboratory-services chess__row__info-container">
-        <h4 class="left-side laboratory-services chess__row__info-container__title">
+      <div class="left-side laboratory-services chess__row__info-container" data-aos="fade-left" data-aos-duration="1000">
+        <h4 class="left-side laboratory-services chess__row__info-container__title" data-aos="fade-left" data-aos-duration="1500">
           MiniJet printeri o’rnatilgan ko’p funksiyali  MPP Uno uskunasi yordamida qadoqlash va markirovkalash
         </h4>
-        <p class="left-side laboratory-services chess__row__info-container__description">
+        <p class="left-side laboratory-services chess__row__info-container__description" data-aos="fade-left" data-aos-duration="2200">
           2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.
         </p>
          <router-link
+         data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab2,title:labData.title2,description:labData.description2} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="left-side laboratory-services chess__row__img-container">
+      <div class="left-side laboratory-services chess__row__img-container" data-aos="fade-right"  data-aos-duration="1700">
         <img
           :src="lab4"
           alt="Feed Quality Control Laboratory"
@@ -116,19 +117,20 @@
       </div>
     </div>
     <div class="laboratory-services chess__row">
-      <div class="laboratory-services chess__row__info-container">
+      <div class="laboratory-services chess__row__info-container" data-aos="fade-right" data-aos-duration="1000">
         <h4 class="laboratory-services chess__row__info-container__title">
-          Urug’larni sifatli saqlash
+          Urug’larni saqlash / Genetik baza
         </h4>
-        <p class="laboratory-services chess__row__info-container__description">
+        <p class="laboratory-services chess__row__info-container__description" data-aos="fade-right" data-aos-duration="1500">
           Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.
         </p>
        <router-link
+       data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab3,title:labData.title3,description:labData.description3} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="laboratory-services chess__row__img-container">
+      <div class="laboratory-services chess__row__img-container" data-aos="fade-left"  data-aos-duration="1700">
         <img
           :src="lab3"
           alt="Laboratory of Milk Quality Selection Control"
@@ -137,21 +139,22 @@
       </div>
     </div>
     <div class="left-side laboratory-services chess__row">
-      <div class="left-side laboratory-services chess__row__info-container">
-        <h4 class="left-side laboratory-services chess__row__info-container__title">
+      <div class="left-side laboratory-services chess__row__info-container" data-aos="fade-left" data-aos-duration="1000">
+        <h4 class="left-side laboratory-services chess__row__info-container__title" data-aos="fade-left" data-aos-duration="1500">
           
     Suyuq azot bilan taminlash
 
         </h4>
-        <p class="left-side laboratory-services chess__row__info-container__description">
+        <p class="left-side laboratory-services chess__row__info-container__description" data-aos="fade-left" data-aos-duration="2200">
           Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00
         </p>
           <router-link
+          data-aos="fade-right" data-aos-duration="1000"
          :to="{path:'laboratoriya',query:{img:lab4,title:labData.title4,description:labData.description4} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
-      <div class="left-side laboratory-services chess__row__img-container">
+      <div class="left-side laboratory-services chess__row__img-container" data-aos="fade-right"  data-aos-duration="1700">
         <img
           :src="lab4"
           alt="Feed Quality Control Laboratory"
@@ -162,10 +165,15 @@
   </section>
   
   <div class="blog">
-    <h1 class="blog__title"><router-link to="/news" class="blog__title">Maqolalar</router-link></h1>
+    <h1 class="blog__title" data-aos="fade-right" data-aos-duration="1000"><router-link to="/news" class="blog__title" >Maqolalar</router-link></h1>
     
     <div class="blog-cell">
-      <div class="blog-card" v-for="item,index in data" :key="index">
+      <div class="blog-card" 
+      v-for="item,index in data" 
+      :key="index" 
+      data-aos="fade-left"
+      data-aos-duration='1200'
+      >
         <div class="img-container">
           <img :src="item.img" class="blog-img"/>
         </div>
@@ -178,10 +186,10 @@
     </div>
   </div>
   <section class="departament">
-    <h3 class="dep-title">Departament</h3>
+    <h3 class="dep-title" data-aos="fade-right" data-aos-duration="1000">Bosh tashkilotlar</h3>
     <div class="departament-group">
-      <div class="dep-item"><img :src="dep1" alt="Departament" class="departament-img"/></div>
-      <div class="dep-item"><img :src="dep2" alt="Departament" class="departament-img"/></div>
+      <div class="dep-item" data-aos="fade-left" data-aos-duration="1600"><img :src="dep1" alt="Departament" class="departament-img"/></div>
+      <div class="dep-item" data-aos="fade-left" data-aos-duration="1600"><img :src="dep2" alt="Departament" class="departament-img"/></div>
     </div>
   </section>
 </template>
@@ -284,7 +292,7 @@ export default {
         description1:"2022-yildan buyon naslchilik korxonasi MINITUBE kompaniyasi tomonidan Germaniyada ishlab chiqarilgan Androvision maxsus avtomatlashtirilgan texnikadan foydalangan holda buqalar urug‘ini kompleks tahlil qilib kelmoqda. U urug’ning nafaqat harakatchanlik, kontsentratsiya va morfologiyasini an’anaviy tahlillarini, balki spermatozoidlarning funksionalligini baholashni ham ta'minlaydi.",
         title2:"MiniJet printeri ",
         description2:"2006-yildan buyon naslchilik korxonasida urug‘larni qadoqlash ishlari Germaniyada ishlab chiqarilgan, zamonaviy MINITUBE uskunasi yordamida amalga oshirilmoqda. Bu uskuna urug‘ni anaʼnaviy granula shaklidan anchagina avfzalliklarga ega bo‘lgan payeta shaklida qadoqlaydi va markirovka qiladi.",
-        title3:"Urug’larni sifatli saqlash",
+        title3:"Urug’larni saqlash / Genetik baza",
         description3:"Naslchilik korxonasida nasldor buqa urug’larini uzoq muddat saqlash maqsadida… uskunalarida -196C gradus haroratda chuqur muzlatish amalga oshiriladi.",
         title4:"Suyuq azot bilan taminlash",
         description4:"Suniy urug’lantirish bilan shug’ullanuvchi sub’yektlarni suyuq azot bilan uzluksiz taminlash maqsadida naslchilik korxonasining 4 tonnalik maxsus kiriogen idishi o’rnatilgan ISUZU rusumli avtomobil vositasi xizmat qiladi.00",

@@ -34,7 +34,7 @@
         2022 © Uznasilchilik
       </p>
       <div class="footer-bottom_right">
-        <a href="https://www.instagram.com/valisher.botirov/" class="footer__row__side__copyright">Developed by Valisher Botirov and Bekzod Baratov</a>
+        <a href="https://www.instagram.com/valisher.botirov/" class="footer__row__side__copyright">Developed by Valisher Botirov and Shokhruh Soatov</a>
       </div>
     </div>
   </div>

@@ -25,9 +25,7 @@
       <p class="right-text">{{route.query.weight}}</p>
     </div>
    </div>
-   <div class="passport-img">
-    <img :src="route.query.pass_img" alt="images">
-   </div>
+   
   </div>
 </template>
 
