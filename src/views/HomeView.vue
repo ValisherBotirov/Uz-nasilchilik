@@ -14,21 +14,10 @@
   <!-- bannerdan keyingi section -->
   <!-- catalog section start -->
   <section class="catalog_section ">
-<<<<<<< HEAD
     <h3 class="left-side laboratory-services chess__row__info-container__title">Katalog</h3>
     <p class="catalog_section-paragraph">
       Xozirda korxonada 9 xil zotga maʼnsub bo‘lgan, 100 boshga yaqin naslli buqalar yani golshtin qora-ola,
        golshtin qizil-ola, angler, qizil-daniya, shvits, simmental, angus, gereford va bushuyev zotili naslli buqalar parvarishlab kelinmoqda. 
-=======
-    <h3 class="left-side laboratory-services chess__row__info-container__title" data-aos="fade-right" data-aos-duration="700">Katalog</h3>
-    <p class="catalog_section-paragraph" data-aos="fade-right" data-aos-duration="1500">
-      We sell the seed of bulls of the Holstein breed of the best world selection. The productivity of bull mothers is
-      from 1,0000 to 24,000 kg of milk, fat content from 3.6% to 4.5%, protein content from 3.0 to 4.0%. Bulls are born
-      in the USA, Canada, Germany, the Netherlands. All bulls were tested for the carriage of gene anomalies,
-      haplotypes, for the ease of calving of daughters. Product prices are flexible. The laboratory for selection
-      control of milk quality examines samples for fat, protein, content of somatic cells, urea in milk, falsification
-      and quality of feeding cows
->>>>>>> 14a7a67c2513ad47579d88cb2698c7f5d5f8d8a0
     </p>
     <div class="slider_container " data-aos="fade-left" data-aos-duration="1800">
       <swiper
