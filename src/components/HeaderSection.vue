@@ -2,7 +2,7 @@
     <div class="responsive-header" :class="{'active':toogleBtn}">
       
     <div class="header-links_res"  >
-        <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Boah menu</RouterLink>
+        <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Bosh menu</RouterLink>
         <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">Biz haqimizda </RouterLink>
         <RouterLink to="/news" class="header-link_res" @click="toogleBtn=!toogleBtn">Maqolalar</RouterLink>
         <RouterLink to="/catolog" class="header-link_res" @click="toogleBtn=!toogleBtn">Katalog</RouterLink>
@@ -161,6 +161,7 @@ opacity: 0;
   background-color: rgb(190, 189, 189);
   text-align: center;
   transition: all 0.5s;
+  overflow: hidden;
 }
 .responsive-header.active{
   opacity: 1;
