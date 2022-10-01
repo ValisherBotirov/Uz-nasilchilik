@@ -115,8 +115,10 @@
   font-size: 28px;
   position: relative;
   margin-top: 20px;
+  transition: all 0.4s;
 }
 .header-icon:hover {
+  transform: translateY(-6px) scale(1.2);
   color: #333;
 }
 .header {
@@ -133,6 +135,10 @@
 }
 .header-logo {
   width: 60px;
+  transition: all 0.5s;
+}
+.header-logo:hover{
+  transform: scale(1.1);
 }
 .header-links {
   display: flex;
@@ -142,6 +148,7 @@
   text-decoration: none;
   color: #a4a4a4;
   font-size: 20px;
+    transition: all 0.5s;
 }
 .header-link:hover {
   color: black;

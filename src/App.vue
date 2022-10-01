@@ -9,7 +9,7 @@
 <style scoped>
 .header {
   position: fixed;
-  width: 100%;
+  width: 100% ;
   background-color: #fff;
   margin: 0 auto;
   top: 0;
