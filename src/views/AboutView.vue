@@ -15,32 +15,32 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
   </section>
   <!-- two section -->
   <section class="about-banner">
-    <h1 class="title">Suniy urug'lantirish - bu sizning yutug'ingiz</h1>
+    <h1 class="title" data-aos="fade-left" data-aos-duration="500">Suniy urug'lantirish - bu sizning yutug'ingiz</h1>
     <div class="banner-left">
-      <div class="banner-text">
-        <p class="position">O'znasilchilik davlat korxonasi direktori</p>
-        <h3 class="name">Mamatqulov Olimjon Eshonqulov</h3>
+      <div class="banner-text" >
+        <p class="position" data-aos="fade-right" data-aos-duration="1100">O'znasilchilik davlat korxonasi direktori</p>
+        <h3 class="name" data-aos="fade-right" data-aos-duration="1200">Mamatqulov Olimjon Eshonqulov</h3>
       </div>
-      <div class="banner-img">
+      <div class="banner-img" data-aos="fade-left" data-aos-duration="1100">
         <img src="../components/images/direktor.jpg" alt="iamges" class="img-item">
       </div>
     </div>
     <div class="banner-right">
-        <div class="banner-img">
+        <div class="banner-img" data-aos="fade-right" data-aos-duration="1300">
         <img src="../components/images/ziyodulla.jpg" alt="iamges" class="img-item">
       </div>
          <div class="banner-text_right">
-        <p class="position">O'znasilchilik davlat korxonasi bosh zootexnigi</p>
-        <h3 class="name">Mamatqulov Olimjon Eshonqulov</h3>
+        <p class="position" data-aos="fade-left" data-aos-duration="1000">O'znasilchilik davlat korxonasi bosh zootexnigi</p>
+        <h3 class="name" data-aos="fade-left" data-aos-duration="1100">Pirnazarova Ziyodulla Maxmado'stovich</h3>
       </div>
     
     </div>
    <div class="banner-left">
       <div class="banner-text">
-        <p class="position">O'znasilchilik davlat korxonasi bosh zootexnigi</p>
-        <h3 class="name">Mamatqulov Olimjon Eshonqulov</h3>
+        <p class="position" data-aos="fade-right" data-aos-duration="1100">O'znasilchilik davlat korxonasi bosh zootexnigi</p>
+        <h3 class="name" data-aos="fade-right" data-aos-duration="1200">Mamtaliyev Sherzodbek Sodiqjonovich</h3>
       </div>
-      <div class="banner-img">
+      <div class="banner-img" data-aos="fade-left" data-aos-duration="1100">
         <img src="../components/images/sherzod.jpg" alt="iamges" class="img-item">
       </div>
     </div>
