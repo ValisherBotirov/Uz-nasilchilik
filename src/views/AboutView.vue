@@ -3,11 +3,11 @@
     <div class="about-us usp__bgr"></div>
     <div class="about-us usp__toning"></div>
     <div class="about-us usp__wrapper">
-      <h1 class="about-us usp__wrapper__title" data-aos="fade-left" data-aos-duration="1200">Korxona haqida</h1>
-      <p class="about-us usp__wrapper__text" data-aos="fade-left" data-aos-duration="1800">
+      <h1 class="about-us usp__wrapper__title">Korxona haqida</h1>
+      <p class="about-us usp__wrapper__text">
 Naslli buqalar soni 1960 yilda 13 boshga, 1968
 yilda 33 boshga yetkazilgan.
-Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va naslchilik boʼyicha ishlab chiqarish “Oʼznaslchilik” korxonasi
+Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va naslchilik boʼyicha ishlab chiqarish “Oʼznaslchilik” davlat korxonasi
  deb yuritila boshlangan.
 
       </p>
@@ -17,10 +17,10 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
   <section class="dark about-banner chess">
     <div class="chess__row">
       <div class="chess__row__info-container">
-        <h3 class="chess__row__info-container__title" data-aos="fade-right" data-aos-duration="500">
+        <h3 class="chess__row__info-container__title">
           High performance
         </h3>
-        <p class="chess__row__info-container__description" data-aos="fade-right" data-aos-duration="1400">
+        <p class="chess__row__info-container__description">
           Over the years, more than 30 million doses of semen have been frozen,
           of which more than 3.5 million from improver bulls, an estimated 735
           heads of manufacturing bulls, 49% of which are recognized as
@@ -29,7 +29,7 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
           French company IMV technologies of the 4th generation
         </p>
       </div>
-      <div class="chess__row__img-container" data-aos="fade-left" data-aos-duration="2000">
+      <div class="chess__row__img-container">
         <img
           src="../components/images/bull2.jpg"
           alt=""
@@ -39,17 +39,17 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
     </div>
     <div class="left-side  chess__row">
       <div class="chess__row__info-container">
-        <h3 class="chess__row__info-container__title" data-aos="fade-left" data-aos-duration="500">
+        <h3 class="chess__row__info-container__title">
           Special approach
         </h3>
-        <p class="chess__row__info-container__description" data-aos="fade-left" data-aos-duration="1000">
+        <p class="chess__row__info-container__description">
           For beef cattle, the company is carrying out breeding work aimed at
           increasing the growth rate and the quality of muscled carcass (muscled
           hind legs to the hock or the carpal joint, well-developed dewlap,
           pronounced ham, and long lumbar part)
         </p>
       </div>
-      <div class="chess__row__img-container" data-aos="fade-right" data-aos-duration="2000">
+      <div class="chess__row__img-container">
         <img
           src="../components/images/bull.jpg"
           alt=""
