@@ -30,7 +30,7 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
         <img src="../components/images/ziyodulla.jpg" alt="iamges" class="img-item">
       </div>
          <div class="banner-text_right">
-        <p class="position" data-aos="fade-left" data-aos-duration="1000">O'znasilchilik davlat korxonasi bosh maslahatchi</p>
+        <p class="position" data-aos="fade-left" data-aos-duration="1000">O'znasilchilik davlat korxonasi,  maslahatchi</p>
         <h3 class="name" data-aos="fade-left" data-aos-duration="1100">Pirnazarova Ziyodulla Maxmado'stovich</h3>
       </div>
     
