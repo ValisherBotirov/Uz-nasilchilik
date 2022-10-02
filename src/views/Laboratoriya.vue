@@ -375,6 +375,16 @@ img {
   border-radius: 8px;
 }
 
+.gal-img_box{
+  transition:all  0.4s ; 
+}
+
+.gal-img_box:hover{
+  transform: scale(1.3) ;
+  overflow: hidden;
+  z-index: 1000;
+}
+
 @media(max-width: 1050px){
   .gallery-group{
     grid-template-columns: repeat(2, 1fr);
