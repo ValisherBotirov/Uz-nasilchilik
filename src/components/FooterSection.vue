@@ -28,6 +28,11 @@
         </p>
         <a href="#" class="footer-email">uznasilchilik.uz</a>
       </div>
+      <div class="map">
+        <a href="https://www.google.com/maps/place/O'znaslchilik/@41.3327197,69.4204294,15z/data=!4m5!3m4!1s0x0:0x3b94b6d1dda30da4!8m2!3d41.3327197!4d69.4204294" target="_blank">
+        <img src="./images/map.jpg" alt="map" class="map-img">
+        </a>
+      </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-bottom_left">
@@ -138,6 +143,15 @@
   color: rgb(136, 130, 130);
   transform: scale(1.2)
 }
+.footer-middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map-img{
+  height: 200px;
+  object-fit: cover;
+}
 /* responive */
 @media (max-width: 768px){
   .footer-bottom{
@@ -149,7 +163,18 @@
   }
   .footer-middle_box{
     text-align: center;
+  } 
+}
+@media (max-width:886px){
+  .footer-middle{
+    flex-direction: column;
   }
-  
+  .map{
+    width: 100%;
+    margin-top: 15px;
+  }
+  .map-img{
+    width: 100%;
+  }
 }
 </style>

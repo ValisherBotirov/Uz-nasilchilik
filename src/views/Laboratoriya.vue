@@ -127,6 +127,7 @@ import lab3 from "../components/images/lab3.jpg"
 import lab4 from "../components/images/lab4.jpg"
 
 import {useRoute} from "vue-router"
+import { onMounted } from "@vue/runtime-core"
 
 const route = useRoute()
 
@@ -150,6 +151,17 @@ let description = route.query.description? route.query.description : labData.des
 const realoadPage = () =>{
   window.location.reload()
 }
+
+const hoverFunc = () =>{
+  const item = document.querySelectorAll('.gal-img_box');
+  item.forEach((e)=>{
+    e.addEventListener('mouseover',(event)=>{
+      console.log(event,"bu event");
+    })
+    console.log(e,"ishladi");
+  })
+}
+
 
 </script>
 
