@@ -109,6 +109,16 @@
     </div>
   </section>
   </div>
+  <section class="container photogallery">
+    <h2 class="title">Galereya</h2>
+    <div class="gallery-group">
+      <div class="gal-img_box"><img src="../components/images/dslab1.jpg" alt="img" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab2.jpg" alt="img" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab3.jpg" alt="img3" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab4.jpg " alt="img" class="gal-img"></div>
+      <div class="gal-img_box"><img src="../components/images/dslab5.jpg" alt="img" class="gal-img"></div>
+    </div>
+  </section>
 </template>
 <script setup>
 import lab1 from "../components/images/lab1.jpg"
@@ -347,7 +357,28 @@ img {
   transition: 0.3s all;
 }
 
+/* photo-gallery */
+
+.photogallery{
+  margin-bottom: 80px;
+}
+.gallery-group{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.gal-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 @media(max-width: 1050px){
+  .gallery-group{
+    grid-template-columns: repeat(2, 1fr);
+  }
   .chess__row,.left-side.chess__row{
     display: flex;
     flex-direction: column-reverse;

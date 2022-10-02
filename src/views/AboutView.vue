@@ -14,47 +14,34 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
     </div>
   </section>
   <!-- two section -->
-  <section class="dark about-banner chess">
-    <div class="chess__row">
-      <div class="chess__row__info-container">
-        <h3 class="chess__row__info-container__title">
-          High performance
-        </h3>
-        <p class="chess__row__info-container__description">
-          Over the years, more than 30 million doses of semen have been frozen,
-          of which more than 3.5 million from improver bulls, an estimated 735
-          heads of manufacturing bulls, 49% of which are recognized as
-          improvers. Since 2006, the pedigree enterprise has frozen the seed of
-          bulls according to European technology, using the equipment of the
-          French company IMV technologies of the 4th generation
-        </p>
+  <section class="about-banner">
+    <h1 class="title" data-aos="fade-left" data-aos-duration="500">Suniy urug'lantirish - bu sizning yutug'ingiz</h1>
+    <div class="banner-left">
+      <div class="banner-text" >
+        <p class="position" data-aos="fade-right" data-aos-duration="1100">O'znasilchilik davlat korxonasi direktori</p>
+        <h3 class="name" data-aos="fade-right" data-aos-duration="1200">Mamatqulov Olimjon Eshonqulov</h3>
       </div>
-      <div class="chess__row__img-container">
-        <img
-          src="../components/images/bull2.jpg"
-          alt=""
-          class="laboratory-services chess__row__img-container__img"
-        />
+      <div class="banner-img" data-aos="fade-left" data-aos-duration="1100">
+        <img src="../components/images/direktor.jpg" alt="iamges" class="img-item">
       </div>
     </div>
-    <div class="left-side  chess__row">
-      <div class="chess__row__info-container">
-        <h3 class="chess__row__info-container__title">
-          Special approach
-        </h3>
-        <p class="chess__row__info-container__description">
-          For beef cattle, the company is carrying out breeding work aimed at
-          increasing the growth rate and the quality of muscled carcass (muscled
-          hind legs to the hock or the carpal joint, well-developed dewlap,
-          pronounced ham, and long lumbar part)
-        </p>
+    <div class="banner-right">
+        <div class="banner-img" data-aos="fade-right" data-aos-duration="1300">
+        <img src="../components/images/ziyodulla.jpg" alt="iamges" class="img-item">
       </div>
-      <div class="chess__row__img-container">
-        <img
-          src="../components/images/bull.jpg"
-          alt=""
-          class="aboratory-services chess__row__img-container__img"
-        />
+         <div class="banner-text_right">
+        <p class="position" data-aos="fade-left" data-aos-duration="1000">O'znasilchilik davlat korxonasi bosh zootexnigi</p>
+        <h3 class="name" data-aos="fade-left" data-aos-duration="1100">Pirnazarova Ziyodulla Maxmado'stovich</h3>
+      </div>
+    
+    </div>
+   <div class="banner-left">
+      <div class="banner-text">
+        <p class="position" data-aos="fade-right" data-aos-duration="1100">O'znasilchilik davlat korxonasi bosh zootexnigi</p>
+        <h3 class="name" data-aos="fade-right" data-aos-duration="1200">Mamtaliyev Sherzodbek Sodiqjonovich</h3>
+      </div>
+      <div class="banner-img" data-aos="fade-left" data-aos-duration="1100">
+        <img src="../components/images/sherzod.jpg" alt="iamges" class="img-item">
       </div>
     </div>
   </section>
@@ -62,10 +49,7 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
 
 <style scoped lang="scss">
 
-  .about-banner{
-    width: 90%;
-    margin : 0 auto;
-  }
+ 
 .about-us.usp {
   margin-bottom: 40px;
 }
@@ -121,109 +105,98 @@ span {
 }
 
 /* teo section */
-.chess {
-  margin-top: 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.chess__row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-  width: 100%;
+.title{
+  font-family: "Museo Bold";
+  font-size: 40px;
+  margin-bottom: 80px;
 }
 
-.left-side.chess__row {
+ .about-banner{
+    width: 70%;
+    margin : 0 auto;
+    margin-bottom: 50px;
+  }
+
+.banner-left{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
+  justify-content: flex-end; 
+  gap: 25px;
+  margin: 25px 0;
 }
-.chess__row__info-container {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-end;
-  flex-grow: 3;
-  width: 60%;
-  padding-left: 150px;
-  padding-right: 35px;
-}
-.chess__row__img-container {
+.banner-right{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  justify-content: flex-end;
-  width: 40%;
-  flex-grow: 1;
-}
-.left-side.chess__row__info-container {
-  padding-right: 150px;
-  padding-left: 35px;
-  align-items: flex-start;
-}
-.chess__row__info-container__title {
-  margin-bottom: 0;
-  color: #0055e9;
-  font-size: 35px;
-  text-align: right;
-}
-.chess__row__info-container__description {
-  text-align: right;
+  justify-content: flex-start; 
+  gap: 25px;
   margin: 25px 0;
 }
 
-p,
-span {
-  font-family: Museo Regular;
-  line-height: 20px;
+.banner-text{
+  text-align: right;
+  width: 25%;
 }
-.chess__row__img-container__img {
-  width: 100%;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.banner-text_right{
+  text-align: left;
+  width: 25%;
 }
-img {
-  border-radius: 10px;
+
+.img-item{
+  object-fit: cover;
+  height: 300px;
+}
+
+.position{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "system-ui";
+}
+.name{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto";
+  margin-top: 10px;
+}
+
+
+
+@media (max-width : 1000px){
+  .banner-text,.banner-text_right{
+    width: 40%;
+  }
+  .title{
+    font-size : 36px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width : 720px){
+.banner-text,.banner-text_right{
+    width: 100%;
+  }
+    .banner-left{
+    flex-direction: column-reverse;
+    justify-content: center;
+   
+  }
+  .banner-right{
+    flex-direction: column;
+  }
+  .img-item{
+    width: 100%;
+  }
+  .banner-text ,.banner-text_right{
+    text-align: center;
+  }
+  .title{
+    font-size : 20px;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width:600px){
   .usp__wrapper{
     width: auto;
   }
-}
-@media (max-width:930px){
-  .chess__row {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .chess__row__img-container__img , .chess__row__img-container{
-    width: 100%;
-    object-fit: cover;
-  }
-  .chess__row__info-container{
-    padding: 0;
-    width: 100%;
-    align-items: flex-start;
-  }
-  .chess__row__info-container__description{
-    text-align: left;
-    width: 100%;
-    margin: 10px 0; 
-  }
-  .chess__row__info-container__title{
-    margin-top: 10px;
-  }
-  .left-side{
-    display: flex !important;
-    flex-direction: column-reverse !important;
-  } 
+
 }
 
 </style>

@@ -2,10 +2,11 @@
     <div class="responsive-header" :class="{'active':toogleBtn}">
       
     <div class="header-links_res"  >
-        <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Home</RouterLink>
-        <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">About </RouterLink>
-        <RouterLink to="/news" class="header-link_res" @click="toogleBtn=!toogleBtn">News</RouterLink>
-        <RouterLink to="/catolog" class="header-link_res" @click="toogleBtn=!toogleBtn">Catolog</RouterLink>
+        <RouterLink to="/" class="active header-link_res" @click="toogleBtn=!toogleBtn">Bosh menu</RouterLink>
+        <RouterLink to="/about" class="header-link_res" @click="toogleBtn=!toogleBtn">Biz haqimizda </RouterLink>
+        <RouterLink to="/news" class="header-link_res" @click="toogleBtn=!toogleBtn">Maqolalar</RouterLink>
+        <RouterLink to="/catolog" class="header-link_res" @click="toogleBtn=!toogleBtn">Katalog</RouterLink>
+        <RouterLink to="/laboratoriya" class="header-link_res" @click="toogleBtn=!toogleBtn">Laboratoriya</RouterLink>
       </div>
       <div class="header-right_res">
       <div class="header-right_items">
@@ -114,8 +115,10 @@
   font-size: 28px;
   position: relative;
   margin-top: 20px;
+  transition: all 0.4s;
 }
 .header-icon:hover {
+  transform: translateY(-6px) scale(1.2);
   color: #333;
 }
 .header {
@@ -132,6 +135,10 @@
 }
 .header-logo {
   width: 60px;
+  transition: all 0.5s;
+}
+.header-logo:hover{
+  transform: scale(1.1);
 }
 .header-links {
   display: flex;
@@ -141,6 +148,7 @@
   text-decoration: none;
   color: #a4a4a4;
   font-size: 20px;
+    transition: all 0.5s;
 }
 .header-link:hover {
   color: black;
@@ -160,6 +168,7 @@ opacity: 0;
   background-color: rgb(190, 189, 189);
   text-align: center;
   transition: all 0.5s;
+  overflow: hidden;
 }
 .responsive-header.active{
   opacity: 1;

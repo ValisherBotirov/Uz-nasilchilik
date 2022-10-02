@@ -8,7 +8,8 @@
 
 <style scoped>
 .header {
-  position: sticky;
+  position: fixed;
+  width: 100% ;
   background-color: #fff;
   margin: 0 auto;
   top: 0;

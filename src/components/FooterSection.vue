@@ -81,10 +81,12 @@
   gap: 20px;
 }
 .footer__row__side.social-links a {
+  transition: all 0.5s;
   font-size: 24px;
 }
 .footer__row__side.social-links a:hover {
-  transform: scale(1.5);
+  transform: translateY(-6px) scale(1.3);
+  
 }
 .footer__row__side {
   display: flex;

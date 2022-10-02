@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   
 }
 body {
@@ -10,4 +11,9 @@ body {
 @font-face {
   font-family: "Museo Bold";
   src: url("./fonts/MuseoModerno-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
 }
