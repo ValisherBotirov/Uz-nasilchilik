@@ -24,9 +24,8 @@
           {{labData.description1}}
         </p>
      <router-link
-     @click="realoadPage"
      data-aos="fade-right" data-aos-duration="1000"
-         :to="{path:'laboratoriya',query:{img:lab1,title:labData.title1,description:labData.description1} }"
+         :to="{path:'laboratoriya/1',query:{img:lab1,title:labData.title1,description:labData.description1} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
@@ -47,9 +46,9 @@
         {{labData.description2}}
         </p>
        <router-link
-       @click="realoadPage"
+      
        data-aos="fade-right" data-aos-duration="1000"
-         :to="{path:'laboratoriya',query:{img:lab2,title:labData.title2,description:labData.description2} }"
+         :to="{path:'laboratoriya/2',query:{img:lab2,title:labData.title2,description:labData.description2} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
@@ -70,9 +69,8 @@
           {{labData.description3}}
         </p>
      <router-link
-     @click="realoadPage"
      data-aos="fade-right" data-aos-duration="1000"
-         :to="{path:'laboratoriya',query:{img:lab3,title:labData.title3,description:labData.description3} }"
+         :to="{path:'laboratoriya/3',query:{img:lab3,title:labData.title3,description:labData.description3} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>
@@ -93,9 +91,9 @@
          {{labData.description4}}
         </p>
         <router-link
-        @click="realoadPage"
+        
         data-aos="fade-right" data-aos-duration="1000"
-         :to="{path:'laboratoriya',query:{img:lab4,title:labData.title4,description:labData.description4} }"
+         :to="{path:'laboratoriya/4',query:{img:lab4,title:labData.title4,description:labData.description4} }"
           class="rounded-button blue laboratory-services chess__row__info-container__more"
           >More</router-link>
       </div>

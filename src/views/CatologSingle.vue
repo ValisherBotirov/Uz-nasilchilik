@@ -41,6 +41,7 @@ console.log(route.params)
 .container{
   width: 70%;
   margin: 0 auto;
+  margin-top: 70px;
 }
 .title{
   color: black;
