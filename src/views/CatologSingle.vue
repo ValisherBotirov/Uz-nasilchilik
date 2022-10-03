@@ -2,7 +2,7 @@
   <div class="container">
     <img :src="route.query.img" alt="">
     <h1 class="title">{{route.query.title}}</h1>
-   <div class="content">
+   <!-- <div class="content">
     <div class="box">
       <p class="left-text">Zoti</p>
       <p class="right-text">{{route.query.zoti}}</p>
@@ -24,7 +24,7 @@
       <p class="left-text">Tirik vazni</p>
       <p class="right-text">{{route.query.weight}}</p>
     </div>
-   </div>
+   </div> -->
    
   </div>
 </template>
@@ -48,6 +48,7 @@ console.log(route.params)
   text-align: center;
   font-size: 35px;
   margin-top: 20px ;
+  margin-bottom: 20px;
   font-family: 'Museo Bold';
 }
 img{

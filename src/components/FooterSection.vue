@@ -24,7 +24,7 @@
         <p class="footer-discription">O'zbekiston bo'ylab yuqori genotipli chuqur muzlatilgan naslli buqalar urug'larni yetqazib beradi</p>
         <p class="footer-location"><b>Manzilimiz : </b> Toshkent shahar Mirzo Ulug'bek tumani 37-A uy</p>
         <p class="footer-phone">
-          <b>Telefon : </b>&nbsp; +998 (90) 915 25 26
+          <b>Telefon : </b>&nbsp; +998 (91) 162 43 23
         </p>
         <a href="#" class="footer-email">uznasilchilik.uz</a>
       </div>
