@@ -18,8 +18,8 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
     <h1 class="title" data-aos="fade-left" data-aos-duration="500">Suniy urug'lantirish - bu sizning yutug'ingiz</h1>
     <div class="banner-left">
       <div class="banner-text" >
-        <p class="position" data-aos="fade-right" data-aos-duration="1100">O'znasilchilik davlat korxonasi direktori</p>
-        <h3 class="name" data-aos="fade-right" data-aos-duration="1200">Mamatqulov Olimjon Eshonqulov</h3>
+        <p class="position" data-aos="fade-right" data-aos-duration="1100">"O'znasilchilik" davlat korxonasi direktori</p>
+        <h3 class="name" data-aos="fade-right" data-aos-duration="1200">Mamatqulov Olimjon Eshonqulovich</h3>
       </div>
       <div class="banner-img" data-aos="fade-left" data-aos-duration="1100">
         <img src="../components/images/direktor.jpg" alt="iamges" class="img-item">
@@ -30,14 +30,14 @@ Korxona nomi 1989 yil 10 noyabrdan boshlab mollarni sunʼiy urugʼlantirish va n
         <img src="../components/images/ziyodulla.jpg" alt="iamges" class="img-item">
       </div>
          <div class="banner-text_right">
-        <p class="position" data-aos="fade-left" data-aos-duration="1000">O'znasilchilik davlat korxonasi,  maslahatchi</p>
-        <h3 class="name" data-aos="fade-left" data-aos-duration="1100">Pirnazarova Ziyodulla Maxmado'stovich</h3>
+        <p class="position" data-aos="fade-left" data-aos-duration="1000">"O'znasilchilik" davlat korxonasi,  maslahatchisi</p>
+        <h3 class="name" data-aos="fade-left" data-aos-duration="1100">Pirnazarova Ziyadulla Maxmado'stovich</h3>
       </div>
     
     </div>
    <div class="banner-left">
       <div class="banner-text">
-        <p class="position" data-aos="fade-right" data-aos-duration="1100">O'znasilchilik davlat korxonasi bosh zootexnigi</p>
+        <p class="position" data-aos="fade-right" data-aos-duration="1100">"O'znasilchilik" davlat korxonasi bosh zootexnigi</p>
         <h3 class="name" data-aos="fade-right" data-aos-duration="1200">Mamtaliyev Sherzodbek Sodiqjonovich</h3>
       </div>
       <div class="banner-img" data-aos="fade-left" data-aos-duration="1100">
