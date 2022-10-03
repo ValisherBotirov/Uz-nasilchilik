@@ -154,11 +154,20 @@ const hoverFunc = () =>{
   const item = document.querySelectorAll('.gal-img_box');
   item.forEach((e)=>{
     e.addEventListener('mouseover',(event)=>{
+      
+        event.target.classList.add('scaleTop')
+      
+     
+      console.log(event.target,"terget")
       console.log(event,"bu event");
     })
     console.log(e,"ishladi");
   })
 }
+
+onMounted(()=>{
+  hoverFunc()
+})
 
 
 </script>
@@ -394,6 +403,17 @@ img {
   overflow: hidden;
   z-index: 1000;
 }
+
+.scaleTop{
+  transform: scale(1.3) ;
+}
+.scaleBot{
+  transform: scale(0.9) ;
+}
+/* .gal-img_box:hover ~ .gal-img_box{
+  transform: scale(0.9) ;
+} */
+
 
 @media(max-width: 1050px){
   .gallery-group{
