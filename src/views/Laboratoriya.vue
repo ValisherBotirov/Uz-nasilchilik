@@ -165,9 +165,7 @@ const hoverFunc = () =>{
   })
 }
 
-onMounted(()=>{
-  hoverFunc()
-})
+
 
 
 </script>
@@ -404,12 +402,12 @@ img {
   z-index: 1000;
 }
 
-.scaleTop{
+/* .scaleTop{
   transform: scale(1.3) ;
 }
 .scaleBot{
   transform: scale(0.9) ;
-}
+} */
 /* .gal-img_box:hover ~ .gal-img_box{
   transform: scale(0.9) ;
 } */
