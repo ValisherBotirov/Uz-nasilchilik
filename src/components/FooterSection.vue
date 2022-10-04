@@ -29,9 +29,7 @@
         <a href="#" class="footer-email">uznasilchilik.uz</a>
       </div>
       <div class="map">
-        <a href="https://www.google.com/maps/place/O'znaslchilik/@41.3327197,69.4204294,15z/data=!4m5!3m4!1s0x0:0x3b94b6d1dda30da4!8m2!3d41.3327197!4d69.4204294" target="_blank">
-        <img src="./images/map.jpg" alt="map" class="map-img">
-        </a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.2850918288065!2d69.41971516637498!3d41.332797179464926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef71abb05127b%3A0x3b94b6d1dda30da4!2sO&#39;znaslchilik!5e0!3m2!1suz!2s!4v1664875200083!5m2!1suz!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-img"></iframe>
       </div>
     </div>
     <div class="footer-bottom">
