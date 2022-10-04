@@ -148,6 +148,7 @@
 }
 .map-img{
   height: 200px;
+  width: 400px;
   object-fit: cover;
 }
 /* responive */
